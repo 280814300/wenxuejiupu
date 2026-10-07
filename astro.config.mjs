@@ -17,4 +17,10 @@ export default defineConfig({
   ],
   // 纯静态，无 SSR / 无适配器
   output: 'static',
+  // 部署/预览时让 dev server 监听 0.0.0.0 并接受任意 Host（Cloudflare/WB 公开部署反向代理需要）
+  server: {
+    host: true,
+    port: 4321,
+    allowedHosts: true,
+  },
 });
