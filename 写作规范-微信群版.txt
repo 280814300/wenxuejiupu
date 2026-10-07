@@ -1,0 +1,116 @@
+【文学酒铺 · 写作规范（专家投稿必读）】
+
+本规范对应网站代码里的字段校验。大家按字段写稿，系统构建时自动把关，格式不对整站构建会报错并精确指出哪错。所以：按规范填 = 必过；构建通过 = 合规。不用人工再审格式。
+
+━━━━━━━━━━━━━━
+一、稿件放哪
+━━━━━━━━━━━━━━
+每篇是一个 .md 文件，按栏目放对应目录：
+· AI应用 → src/content/ai/
+· 软件分享 → src/content/tools/
+· 资源合集 → src/content/resources/
+· 人文记录 → src/content/humanities/
+文件名建议直接用 slug.md。网址由 slug 决定，是三层：域名/栏目/slug/
+
+━━━━━━━━━━━━━━
+二、四个栏目都要填的通用字段
+━━━━━━━━━━━━━━
+title（必填）：标题，2–120字
+description（必填）：摘要，10–200字，写完整一句话，用于搜索展示
+slug（必填）：网址尾段，只能小写英文+短横线，例 claude-china-guide-2026。不能中文/大写/下划线/空格。全站唯一，发布后别改
+pubDate（必填）：发布日期，格式 2026-01-20
+updatedDate（可选）：更新日期，格式同上
+tags（可选）：标签数组，如 ["AI","教程"]，不填默认空
+author（可选）：默认"文学酒铺"
+cover（可选）：封面图路径或URL
+draft（可选）：true 不发布 / false 发布，默认 false
+
+━━━━━━━━━━━━━━
+三、各栏目专属字段
+━━━━━━━━━━━━━━
+【AI应用】加两个可选：
+· level：入门 / 进阶 / 精通（三选一，默认入门）
+· software：涉及的软件名，如 Claude
+
+【软件分享】加四个可选：
+· repo：仓库/官网URL（开源工具填，清单类可不填）
+· license：许可说明
+· platforms：支持平台，只能从 Windows/macOS/Linux/Android/iOS/Web 里选，可多选
+· summary：清单类补充摘要，≤300字
+
+【资源合集】两个必填 + 两个可选：
+· resource（必填）：资源名称
+· panUrl（必填）：网盘链接，必须合法URL
+· extractCode（可选）：提取码
+· size（可选）：体积，如 48GB
+
+【人文记录】只需通用字段，自由写作，无专属字段
+
+━━━━━━━━━━━━━━
+四、完整模板（照抄改内容）
+━━━━━━━━━━━━━━
+AI应用示例：
+---
+title: Claude 国内可用指南 2026
+description: 2026 年国内用户如何稳定、合规地使用 Claude 系列 AI 工具，含官方渠道与替代方案对比。
+slug: claude-china-guide-2026
+pubDate: 2026-01-20
+tags: ["AI", "Claude", "教程"]
+level: 入门
+software: Claude
+author: 文学酒铺
+draft: false
+---
+（正文用 Markdown 写）
+
+软件分享示例：
+---
+title: Obsidian 本地优先笔记
+description: 一款本地 Markdown 笔记软件，支持双向链接与丰富插件生态，适合做长期个人知识库。
+slug: obsidian-local-notes
+pubDate: 2026-02-10
+tags: ["开源", "笔记", "效率"]
+repo: https://github.com/obsidianmd/obsidian-releases
+license: 个人免费（闭源商业软件）
+platforms: ["Windows", "macOS", "Linux", "Android", "iOS"]
+author: 文学酒铺
+draft: false
+---
+
+资源合集示例：
+---
+title: 开源大模型本地部署资源包
+description: 整理常用的开源大模型权重与量化版本下载资源，便于在国内网络环境下做本地推理部署。
+slug: models-pack-2026
+pubDate: 2026-03-15
+tags: ["网盘", "模型", "资源"]
+resource: 开源大模型合集（含 Qwen / DeepSeek 量化版）
+panUrl: https://pan.baidu.com/s/example
+extractCode: wxbj
+size: 48GB
+author: 文学酒铺
+draft: false
+---
+
+人文记录示例：
+---
+title: 关于记录这件事
+description: 在科技之外，聊聊为什么我们要把阅读、思考与生活写下来。
+slug: on-keeping-records
+pubDate: 2026-04-01
+tags: ["随笔", "阅读"]
+author: 文学酒铺
+draft: false
+---
+
+━━━━━━━━━━━━━━
+五、最容易踩的坑
+━━━━━━━━━━━━━━
+1. description 只写几个字 → 必须≥10字
+2. slug 用中文或大写 → 必须全小写英文+短横线
+3. 资源合集漏填 resource / panUrl → 这两个必填
+4. level 写成"初级" → 只能是 入门/进阶/精通
+5. platforms 写"Win""苹果" → 只能用规定的6个英文值
+6. pubDate 写成 2026/1/20 → 用 2026-01-20
+
+写完本地跑 npm run build，通过就能交稿；报错就按提示改 front matter 再构建。
