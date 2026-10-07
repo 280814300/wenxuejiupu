@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SITE } from '../../consts';
+---
+
+<BaseLayout
+  title="关于"
+  description={`关于 ${SITE.title}：站名来源、内容定位与技术栈`}
+>
+  <article class="prose">
+    <h1>关于 {SITE.title}</h1>
+    <p>
+      「{SITE.title}」是我的个人品牌笔名。
+    </p>
+    <p>本站定位：{SITE.slogan}。在科技与人文的交叉地带，做一点踏实的内容记录。</p>
+
+    <h2>本站做什么</h2>
+    <ul>
+      <li><strong>开源软件分享</strong>：把好用、免费、可自托管的开源工具介绍给中文用户。</li>
+      <li><strong>AI 软件落地教学</strong>：不止讲概念，更讲怎么在国内网络环境下真正用起来。</li>
+      <li><strong>网盘资源工具内容</strong>：整理高频需要的资源与工具清单，节省你的搜索时间。</li>
+    </ul>
+
+    <h2>技术</h2>
+    <p>
+      本站基于 Astro 5 构建，纯静态输出，默认零 JavaScript，部署于 Cloudflare Pages。
+      追求极致性能与中文阅读体验，全站 Lighthouse 四项 ≥ 95。
+    </p>
+  </article>
+</BaseLayout>

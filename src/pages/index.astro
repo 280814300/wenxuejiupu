@@ -1,0 +1,51 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PostCard from '../components/PostCard.astro';
+import { SITE, COLUMNS, NAV } from '../consts';
+
+const columns = ['ai', 'tools', 'resources', 'humanities'] as const;
+let all: any[] = [];
+for (const col of columns) {
+  const entries = (await getCollection(col)).filter((e) => !e.data.draft);
+  all = all.concat(entries);
+}
+all.sort((a: any, b: any) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+const recent = all.slice(0, 9);
+---
+
+<BaseLayout>
+  <section class="text-center py-10">
+    <h1 class="text-4xl font-bold m-0">{SITE.title}</h1>
+    <p class="text-lg text-gray-600 mt-2">{SITE.slogan}</p>
+    <p class="text-gray-500 mt-1">{SITE.description}</p>
+  </section>
+
+  <section class="grid grid-cols-2 sm:grid-cols-4 gap-3 my-8">
+    {
+      NAV.map((c) => (
+        <a
+          href={`/${c.slug}/`}
+          class="card block p-4 text-center no-underline text-inherit"
+        >
+          <div class="font-semibold">{c.name}</div>
+          <div class="text-xs text-gray-500 mt-1 leading-snug">
+            {COLUMNS[c.slug].desc}
+          </div>
+        </a>
+      ))
+    }
+  </section>
+
+  <section>
+    <h2 class="text-xl font-bold mb-4">最新内容</h2>
+    <div class="grid gap-4">
+      {recent.map((e) => <PostCard entry={e} />)}
+      {
+        recent.length === 0 && (
+          <p class="text-gray-500">暂无内容，敬请期待。</p>
+        )
+      }
+    </div>
+  </section>
+</BaseLayout>

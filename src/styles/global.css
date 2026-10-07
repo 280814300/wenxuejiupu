@@ -1,0 +1,207 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── 配色参考 blog.zhheo.com（柔和、干净、有层次）── */
+:root {
+  color-scheme: light dark;
+  /* 亮色 */
+  --brand: #425AEF; /* 主题蓝 */
+  --brand-soft: #4259ef23; /* 主题蓝低透明（柔和投影 / 浅底） */
+  --bg: #f7f9fe; /* 页面背景：浅蓝灰 */
+  --card-bg: #ffffff;
+  --card-border: #e3e8f7;
+  --text: #363636;
+  --text-soft: #8a93a6;
+  --btn-bg: #edf0f7;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* 暗色：采用 zhheo 的琥珀金强调 + 深色背景 */
+    --brand: #ffc848;
+    --brand-soft: #f2b94b23;
+    --bg: #17191d;
+    --card-bg: #1b1c20;
+    --card-border: #3d3d3f;
+    --text: #f7f7fa;
+    --text-soft: #9aa3ad;
+    --btn-bg: #30343f;
+  }
+}
+
+/* 中文排版：优先系统字体栈（零外部字体，无阻塞） */
+html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+    'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  line-height: 1.8; /* 正文行高 ≥ 1.8 */
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* 文章正文排版（.prose） */
+.prose {
+  font-size: 16px;
+  word-break: break-word;
+  color: var(--text);
+}
+.prose h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 2rem 0 1rem;
+  line-height: 1.4;
+}
+.prose h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 1.6rem 0 0.75rem;
+  line-height: 1.4;
+}
+.prose p {
+  margin: 1rem 0;
+}
+.prose ul,
+.prose ol {
+  margin: 1rem 0;
+  padding-left: 1.6rem;
+}
+.prose li {
+  margin: 0.4rem 0;
+}
+.prose a {
+  color: var(--brand);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.prose code {
+  background: var(--btn-bg);
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.9em;
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+}
+.prose pre {
+  background: var(--btn-bg);
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  line-height: 1.6;
+}
+.prose pre code {
+  background: none;
+  padding: 0;
+}
+.prose blockquote {
+  border-left: 4px solid var(--brand);
+  margin: 1.2rem 0;
+  padding: 0.5rem 1rem;
+  color: var(--text-soft);
+  background: var(--btn-bg);
+  border-radius: 0 8px 8px 0;
+}
+.prose img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.95em;
+}
+.prose th,
+.prose td {
+  border: 1px solid var(--card-border);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+
+/* 卡片（zhheo 式：大圆角 + 柔和阴影 + hover 上浮 / 主题色描边） */
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 14px;
+  box-shadow: 0 4px 14px -6px rgba(0, 0, 0, 0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease,
+    background-color 0.4s ease;
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px -12px var(--brand);
+  border-color: var(--brand);
+}
+
+/* 标签 pill（主题色浅底） */
+.tag-pill {
+  background: var(--brand-soft);
+  color: var(--brand);
+  border-radius: 999px;
+  padding: 0.15em 0.6em;
+  font-size: 0.8em;
+  white-space: nowrap;
+}
+
+/* 文章目录 TOC（纯 HTML <details>，零 JS） */
+.toc {
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  margin: 1.25rem 0;
+  background: var(--card-bg);
+}
+.toc summary {
+  font-weight: 600;
+  cursor: pointer;
+}
+.toc-list {
+  margin: 0.5rem 0 0;
+  padding-left: 1.2rem;
+}
+.toc-sub {
+  list-style: circle;
+}
+
+/* 暗黑模式跟随系统：把 Tailwind 灰类映射到 zhheo 暗色值 */
+@media (prefers-color-scheme: dark) {
+  .border-gray-200 {
+    border-color: var(--card-border) !important;
+  }
+  .text-gray-500 {
+    color: var(--text-soft) !important;
+  }
+  .text-gray-600 {
+    color: var(--text-soft) !important;
+  }
+  .text-gray-900 {
+    color: var(--text) !important;
+  }
+  .bg-gray-50 {
+    background-color: var(--btn-bg) !important;
+  }
+  .bg-white {
+    background-color: var(--card-bg) !important;
+  }
+}
+
+/* 顶部导航（zhheo 式：sticky + 半透明模糊 + 底部细描边） */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--bg);
+  background: color-mix(in srgb, var(--bg) 86%, transparent);
+  backdrop-filter: saturate(180%) blur(10px);
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  border-bottom: 1px solid var(--card-border);
+  transition: background-color 0.4s ease, border-color 0.4s ease;
+}
+.site-header a {
+  transition: color 0.2s ease;
+}

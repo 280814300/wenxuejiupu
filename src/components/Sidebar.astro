@@ -1,0 +1,81 @@
+---
+import { getCollection } from 'astro:content';
+import { COLUMNS } from '../consts';
+
+interface Props {
+  // 文章目录（来自 render() 的 headings，h2/h3）
+  toc: { depth: number; slug: string; text: string }[];
+}
+
+const { toc } = Astro.props;
+const columns = ['ai', 'tools', 'resources', 'humanities'] as const;
+
+// 近期更新（全站最新 6 篇）
+let recent: any[] = [];
+for (const c of columns) {
+  const entries = (await getCollection(c)).filter((e) => !e.data.draft);
+  recent = recent.concat(entries);
+}
+recent.sort(
+  (a: any, b: any) => b.data.pubDate.getTime() - a.data.pubDate.getTime()
+);
+const recentTop = recent.slice(0, 6);
+---
+
+<aside class="lg:sticky lg:top-20 space-y-4">
+  {
+    toc.length > 0 && (
+      <div class="card p-4">
+        <div class="font-semibold mb-2 text-sm">目录</div>
+        <ul class="toc-list">
+          {toc.map((h) => (
+            <li class={h.depth === 3 ? 'toc-sub' : ''}>
+              <a
+                href={`#${h.slug}`}
+                class="no-underline text-inherit hover:text-brand"
+              >
+                {h.text}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )
+  }
+
+  <div class="card p-4">
+    <div class="font-semibold mb-2 text-sm">分类</div>
+    <ul class="space-y-1.5 text-sm">
+      {
+        columns.map((c) => (
+          <li>
+            <a
+              href={`/${c}/`}
+              class="no-underline text-inherit hover:text-brand"
+            >
+              {COLUMNS[c].name}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+
+  <div class="card p-4">
+    <div class="font-semibold mb-2 text-sm">近期更新</div>
+    <ul class="space-y-2 text-sm">
+      {
+        recentTop.map((e) => (
+          <li class="leading-snug">
+            <a
+              href={`/${e.collection}/${e.data.slug}/`}
+              class="no-underline text-inherit hover:text-brand"
+            >
+              {e.data.title}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</aside>

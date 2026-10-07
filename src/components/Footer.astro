@@ -1,0 +1,20 @@
+---
+import { SITE } from '../consts';
+const year = new Date().getFullYear();
+---
+
+<footer class="border-t border-gray-200 mt-12">
+  <div
+    class="w-full max-w-5xl mx-auto px-4 py-6 text-sm text-gray-500 flex flex-col gap-1"
+  >
+    <p class="m-0">{SITE.slogan}</p>
+    <p class="m-0">
+      © {year} {SITE.title} ·
+      <a href="/rss.xml" class="text-inherit hover:text-brand">RSS</a> ·
+      <a href="/sitemap-index.xml" class="text-inherit hover:text-brand">站点地图</a>
+    </p>
+    <p class="m-0 text-xs">
+      纯静态站点，部署于 Cloudflare Pages。
+    </p>
+  </div>
+</footer>

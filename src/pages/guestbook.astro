@@ -1,0 +1,142 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE } from '../consts';
+---
+
+<BaseLayout
+  title="读者留言"
+  description="在文学酒铺留下你的想法、建议或想聊的话题"
+>
+  <article class="prose max-w-none">
+    <h1>读者留言</h1>
+    <p class="text-gray-600">
+      欢迎在文学酒铺留下你的想法、建议，或想聊的话题。
+    </p>
+
+    <!-- 留言表单（not-prose：避免被正文排版样式干扰） -->
+    <form id="gb-form" class="card p-4 space-y-3 not-prose">
+      <div>
+        <label class="block text-sm mb-1" for="gb-name">昵称</label>
+        <input
+          id="gb-name"
+          type="text"
+          maxlength="20"
+          required
+          placeholder="怎么称呼你"
+          class="w-full rounded-lg border border-gray-200 px-3 py-2 bg-white text-inherit outline-none focus:border-brand"
+        />
+      </div>
+      <div>
+        <label class="block text-sm mb-1" for="gb-msg">留言</label>
+        <textarea
+          id="gb-msg"
+          rows="3"
+          maxlength="500"
+          required
+          placeholder="想说点什么…"
+          class="w-full rounded-lg border border-gray-200 px-3 py-2 bg-white text-inherit outline-none focus:border-brand resize-y"
+        ></textarea>
+      </div>
+      <div class="flex items-center gap-3">
+        <button
+          type="submit"
+          class="rounded-lg px-4 py-2 font-medium text-white bg-[color:var(--brand)] hover:opacity-90 transition-opacity"
+        >
+          提交留言
+        </button>
+        <span id="gb-hint" class="text-sm text-gray-500"></span>
+      </div>
+    </form>
+
+    <h2 class="mt-8 mb-4">留言列表</h2>
+    <ul id="gb-list" class="space-y-3 not-prose"></ul>
+    <p id="gb-empty" class="text-gray-500">还没有留言，来抢沙发吧。</p>
+  </article>
+</BaseLayout>
+
+<script>
+  // ─────────────────────────────────────────────────────────────
+  // 数据层抽象：当前使用浏览器 localStorage（云服务配额下的本地实现）。
+  // 接入云端时，把 GuestbookStore 整段替换为下方「云端版本」即可，
+  // UI 渲染逻辑无需改动。
+  // ─────────────────────────────────────────────────────────────
+  const STORE_KEY = 'wenxuejiupu_guestbook_v1';
+
+  const GuestbookStore = {
+    list() {
+      try {
+        return JSON.parse(localStorage.getItem(STORE_KEY) || '[]');
+      } catch {
+        return [];
+      }
+    },
+    add(entry: { name: string; message: string; createdAt: number }) {
+      const all = this.list();
+      all.unshift(entry);
+      localStorage.setItem(STORE_KEY, JSON.stringify(all));
+      return all;
+    },
+  };
+
+  /* ── 云端版本（激活云服务并拿到 publicConfig 后启用）────────────
+  import { createWorkBuddyCloud } from '@tencent-ai/workbuddy-cloud-sdk';
+  const cloud = createWorkBuddyCloud({
+    endpoint: publicConfig.endpoint,
+    oauthRelayBaseUrl: publicConfig.oauthRelayBaseUrl,
+    publishableKey: publicConfig.publishableKey,
+  });
+  const db = cloud.database;
+  // list:  (await db.collection('guestbook').orderBy('createdAt','desc').limit(50).get()).data
+  // add:   await db.collection('guestbook').add({ name, message, createdAt: Date.now() })
+  ─────────────────────────────────────────────────────────────── */
+
+  function escapeHtml(s: string): string {
+    const div = document.createElement('div');
+    div.textContent = s;
+    return div.innerHTML;
+  }
+
+  function fmtDate(ts: number): string {
+    const d = new Date(ts);
+    const p = (n: number) => String(n).padStart(2, '0');
+    return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())} ${p(d.getHours())}:${p(d.getMinutes())}`;
+  }
+
+  function render(list: { name: string; message: string; createdAt: number }[]) {
+    const ul = document.getElementById('gb-list') as HTMLUListElement;
+    const empty = document.getElementById('gb-empty') as HTMLParagraphElement;
+    ul.innerHTML = '';
+    empty.style.display = list.length ? 'none' : 'block';
+    for (const item of list) {
+      const li = document.createElement('li');
+      li.className = 'card p-4';
+      li.innerHTML = `
+        <div class="flex items-center justify-between mb-1">
+          <span class="font-semibold">${escapeHtml(item.name)}</span>
+          <span class="text-xs text-gray-500">${fmtDate(item.createdAt)}</span>
+        </div>
+        <p class="m-0 whitespace-pre-wrap leading-relaxed">${escapeHtml(item.message)}</p>
+      `;
+      ul.appendChild(li);
+    }
+  }
+
+  const form = document.getElementById('gb-form') as HTMLFormElement;
+  const nameEl = document.getElementById('gb-name') as HTMLInputElement;
+  const msgEl = document.getElementById('gb-msg') as HTMLTextAreaElement;
+  const hint = document.getElementById('gb-hint') as HTMLSpanElement;
+
+  render(GuestbookStore.list());
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = nameEl.value.trim();
+    const message = msgEl.value.trim();
+    if (!name || !message) return;
+    const all = GuestbookStore.add({ name, message, createdAt: Date.now() });
+    render(all);
+    form.reset();
+    hint.textContent = '已保存（本地）';
+    setTimeout(() => (hint.textContent = ''), 2000);
+  });
+</script>

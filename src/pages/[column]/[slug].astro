@@ -1,0 +1,176 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import { COLUMNS, SITE } from '../../consts';
+
+export async function getStaticPaths() {
+  const columns = ['ai', 'tools', 'resources', 'humanities'] as const;
+  const paths = [];
+  for (const col of columns) {
+    const entries = await getCollection(col);
+    for (const entry of entries) {
+      if (entry.data.draft) continue;
+      paths.push({
+        params: {
+          column: col,
+          slug: entry.data.slug,
+        },
+        props: { entry },
+      });
+    }
+  }
+  return paths;
+}
+
+const { entry } = Astro.props;
+const { Content, headings } = await render(entry);
+const toc = headings.filter((h) => h.depth === 2 || h.depth === 3);
+const d = entry.data;
+const colKey = entry.collection as keyof typeof COLUMNS;
+const colName = COLUMNS[colKey].name;
+
+// 同栏目内按发布时间倒序，取上一篇（较新）/ 下一篇（较旧）
+const siblings = (await getCollection(entry.collection))
+  .filter((e) => !e.data.draft)
+  .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+const idx = siblings.findIndex((e) => e.data.slug === d.slug);
+const prevPost = idx > 0 ? siblings[idx - 1] : null;
+const nextPost = idx < siblings.length - 1 ? siblings[idx + 1] : null;
+
+const articleUrl = new URL(
+  `/${entry.collection}/${d.slug}/`,
+  Astro.site
+).href;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: d.title,
+  description: d.description,
+  datePublished: d.pubDate.toISOString(),
+  dateModified: (d.updatedDate ?? d.pubDate).toISOString(),
+  author: { '@type': 'Person', name: d.author },
+  publisher: { '@type': 'Organization', name: SITE.title },
+  mainEntityOfPage: articleUrl,
+  keywords: d.tags.join(', '),
+};
+---
+
+<BaseLayout
+  title={d.title}
+  description={d.description}
+  ogType="article"
+  pubDate={d.pubDate}
+  jsonLd={jsonLd}
+>
+  <div
+    class="lg:grid lg:grid-cols-[minmax(0,1fr)_240px] lg:gap-8 lg:items-start"
+  >
+    <article class="prose min-w-0">
+      <div class="text-sm text-gray-500 mb-2">
+        <a
+          href={`/${entry.collection}/`}
+          class="no-underline text-inherit hover:text-brand">{colName}</a
+        >
+        · {d.pubDate.toISOString().slice(0, 10)}
+        {
+          d.updatedDate && (
+            <span> · 更新 {d.updatedDate.toISOString().slice(0, 10)}</span>
+          )
+        }
+      </div>
+      <h1 class="text-3xl font-bold mt-0 mb-2">{d.title}</h1>
+      <p class="text-gray-600 mb-3">{d.description}</p>
+      {
+        d.tags.length > 0 && (
+          <div class="flex flex-wrap gap-1 mb-4">
+            {d.tags.map((t: string) => (
+              <span class="tag-pill">#{t}</span>
+            ))}
+          </div>
+        )
+      }
+      <hr class="border-gray-200 my-6" />
+      <Content />
+
+      <hr class="border-gray-200 my-8" />
+
+      <!-- 本文信息 -->
+      <div class="card p-4 text-sm space-y-2">
+        <div>
+          <span class="text-gray-500">本文标题：</span>
+          <span class="font-medium">{d.title}</span>
+        </div>
+        <div class="flex flex-wrap items-baseline gap-x-1">
+          <span class="text-gray-500 shrink-0">本文链接：</span>
+          <a href={articleUrl} class="break-all text-inherit hover:text-brand"
+            >{articleUrl}</a
+          >
+        </div>
+        {
+          d.tags.length > 0 && (
+            <div class="flex flex-wrap items-start gap-2">
+              <span class="text-gray-500 shrink-0">标签：</span>
+              <div class="flex flex-wrap gap-1">
+                {d.tags.map((t: string) => (
+                  <span class="tag-pill">#{t}</span>
+                ))}
+              </div>
+            </div>
+          )
+        }
+      </div>
+
+      <!-- 上一篇 / 下一篇 -->
+      {
+        (prevPost || nextPost) && (
+          <nav
+            class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4"
+            aria-label="上一篇与下一篇"
+          >
+            <div>
+              {prevPost ? (
+                <a
+                  href={`/${prevPost.collection}/${prevPost.data.slug}/`}
+                  class="card block p-3 no-underline text-inherit h-full"
+                >
+                  <div class="text-xs text-gray-500 mb-1">← 上一篇</div>
+                  <div class="font-medium leading-snug">
+                    {prevPost.data.title}
+                  </div>
+                </a>
+              ) : (
+                <span class="text-sm text-gray-500">已经是第一篇</span>
+              )}
+            </div>
+            <div>
+              {nextPost ? (
+                <a
+                  href={`/${nextPost.collection}/${nextPost.data.slug}/`}
+                  class="card block p-3 no-underline text-inherit h-full text-right"
+                >
+                  <div class="text-xs text-gray-500 mb-1">下一篇 →</div>
+                  <div class="font-medium leading-snug">
+                    {nextPost.data.title}
+                  </div>
+                </a>
+              ) : (
+                <span class="text-sm text-gray-500">已经是最新一篇</span>
+              )}
+            </div>
+          </nav>
+        )
+      }
+
+      <p class="text-sm text-gray-500 mt-6">
+        <a
+          href={`/${entry.collection}/`}
+          class="no-underline text-inherit hover:text-brand">← 返回 {colName}</a
+        >
+      </p>
+    </article>
+
+    <Sidebar toc={toc} />
+  </div>
+</BaseLayout>

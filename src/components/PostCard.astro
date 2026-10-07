@@ -1,0 +1,40 @@
+---
+import { COLUMNS } from '../consts';
+
+interface Props {
+  // 任意 content collection entry（严格类型会让代码冗长，这里用宽松接口）
+  entry: {
+    collection: keyof typeof COLUMNS;
+    data: {
+      title: string;
+      description: string;
+      slug: string;
+      pubDate: Date;
+      tags: string[];
+    };
+  };
+}
+
+const { entry } = Astro.props;
+const d = entry.data;
+const colName = COLUMNS[entry.collection]?.name ?? entry.collection;
+const url = `/${entry.collection}/${d.slug}/`;
+const dateStr = d.pubDate.toISOString().slice(0, 10);
+---
+
+<article class="card p-4">
+  <div class="text-xs text-gray-500 mb-1">{colName} · {dateStr}</div>
+  <h3 class="text-lg font-semibold mt-0 mb-1 leading-snug">
+    <a href={url} class="no-underline text-inherit">{d.title}</a>
+  </h3>
+  <p class="text-sm text-gray-600 m-0 leading-relaxed">{d.description}</p>
+  {
+    d.tags.length > 0 && (
+      <div class="mt-2 flex flex-wrap gap-1">
+        {d.tags.map((t: string) => (
+          <span class="tag-pill">#{t}</span>
+        ))}
+      </div>
+    )
+  }
+</article>
