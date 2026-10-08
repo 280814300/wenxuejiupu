@@ -68,7 +68,7 @@ const jsonLd = {
     class="lg:grid lg:grid-cols-[minmax(0,1fr)_240px] lg:gap-8 lg:items-start"
   >
     <article class="prose min-w-0">
-      <div class="text-sm text-gray-500 mb-2">
+      <div class="meta-mono text-gray-500 mb-2">
         <a
           href={`/${entry.collection}/`}
           class="no-underline text-inherit hover:text-brand">{colName}</a
@@ -84,17 +84,24 @@ const jsonLd = {
       <p class="text-gray-600 mb-3">{d.description}</p>
       {
         d.tags.length > 0 && (
-          <div class="flex flex-wrap gap-1 mb-4">
+          <div class="flex flex-wrap gap-1 mb-4 meta-mono">
             {d.tags.map((t: string) => (
               <span class="tag-pill">#{t}</span>
             ))}
           </div>
         )
       }
-      <hr class="border-gray-200 my-6" />
-      <Content />
+      {
+        d.cover && (
+          <img src={d.cover} alt={d.title} class="cover-img" />
+        )
+      }
+      <hr class="border-gray-200 my-4" />
+      <div class="prose-body">
+        <Content />
+      </div>
 
-      <hr class="border-gray-200 my-8" />
+      <hr class="border-gray-200 my-6" />
 
       <!-- 本文信息 -->
       <div class="card p-4 text-sm space-y-2">

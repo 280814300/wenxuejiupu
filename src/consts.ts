@@ -12,18 +12,22 @@ export const SITE = {
 export const COLUMNS = {
   ai: {
     name: 'AI 应用',
+    icon: 'ai',
     desc: 'AI 软件落地教学，讲清怎么在国内网络环境下真正用起来',
   },
   tools: {
     name: '软件分享',
+    icon: 'tools',
     desc: '开源与免费软件的分享、评测与自托管指南，含效率工具清单',
   },
   resources: {
     name: '资源合集',
+    icon: 'resources',
     desc: '高频网盘资源与下载工具的整理，省去你的寻找时间',
   },
   humanities: {
     name: '人文记录',
+    icon: 'humanities',
     desc: '在科技之外，记录阅读、思考与生活的人文随笔',
   },
 } as const;

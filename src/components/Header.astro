@@ -12,6 +12,9 @@ import { SITE, NAV } from '../consts';
     >
       <img src="/favicon.svg" alt="" width="28" height="28" class="rounded" />
       <span>{SITE.title}</span>
+      <span class="text-sm font-normal text-gray-500 hidden sm:inline"
+        >· {SITE.slogan}</span
+      >
     </a>
     <nav class="flex flex-wrap gap-x-4 gap-y-1 text-sm" aria-label="主导航">
       {
@@ -24,9 +27,7 @@ import { SITE, NAV } from '../consts';
           </a>
         ))
       }
-      <a href="/guestbook/" class="no-underline text-inherit hover:text-brand">留言</a>
       <a href="/about/" class="no-underline text-inherit hover:text-brand">关于</a>
-      <a href="/rss.xml" class="no-underline text-inherit hover:text-brand">RSS</a>
     </nav>
   </div>
 </header>

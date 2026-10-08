@@ -14,6 +14,9 @@
   --text: #363636;
   --text-soft: #8a93a6;
   --btn-bg: #edf0f7;
+  --tech: #0ea5e9; /* 科技青：进度条 / 网格 / 辉光 */
+  --font-sans: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; /* 参考 blog.zhheo.com 中文无衬线栈 */
+  --font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -26,13 +29,13 @@
     --text: #f7f7fa;
     --text-soft: #9aa3ad;
     --btn-bg: #30343f;
+    --tech: #38bdf8; /* 暗色下科技青更亮，用于辉光 / 网格 */
   }
 }
 
 /* 中文排版：优先系统字体栈（零外部字体，无阻塞） */
 html {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
-    'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Arial, sans-serif;
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
 }
@@ -45,34 +48,39 @@ body {
   transition: background-color 0.4s ease, color 0.4s ease;
 }
 
-/* 文章正文排版（.prose） */
+/* 文章正文排版（.prose）—— 杂志级衬线阅读 */
 .prose {
+  font-family: var(--font-sans);
   font-size: 16px;
+  line-height: 1.7;
   word-break: break-word;
   color: var(--text);
+  max-width: 44rem;
+  margin-inline: auto;
 }
 .prose h2 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 700;
-  margin: 2rem 0 1rem;
+  margin: 1.8rem 0 0.7rem;
   line-height: 1.4;
+  letter-spacing: 0.01em;
 }
 .prose h3 {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 600;
-  margin: 1.6rem 0 0.75rem;
+  margin: 1.3rem 0 0.55rem;
   line-height: 1.4;
 }
 .prose p {
-  margin: 1rem 0;
+  margin: 0.75rem 0;
 }
 .prose ul,
 .prose ol {
-  margin: 1rem 0;
-  padding-left: 1.6rem;
+  margin: 0.75rem 0;
+  padding-left: 1.5rem;
 }
 .prose li {
-  margin: 0.4rem 0;
+  margin: 0.3rem 0;
 }
 .prose a {
   color: var(--brand);
@@ -88,10 +96,10 @@ body {
 }
 .prose pre {
   background: var(--btn-bg);
-  padding: 1rem;
+  padding: 0.8rem;
   border-radius: 8px;
   overflow-x: auto;
-  line-height: 1.6;
+  line-height: 1.55;
 }
 .prose pre code {
   background: none;
@@ -99,8 +107,8 @@ body {
 }
 .prose blockquote {
   border-left: 4px solid var(--brand);
-  margin: 1.2rem 0;
-  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  padding: 0.45rem 0.9rem;
   color: var(--text-soft);
   background: var(--btn-bg);
   border-radius: 0 8px 8px 0;
@@ -113,13 +121,13 @@ body {
 .prose table {
   width: 100%;
   border-collapse: collapse;
-  margin: 1rem 0;
-  font-size: 0.95em;
+  margin: 0.8rem 0;
+  font-size: 0.92em;
 }
 .prose th,
 .prose td {
   border: 1px solid var(--card-border);
-  padding: 0.5rem 0.75rem;
+  padding: 0.4rem 0.6rem;
   text-align: left;
 }
 
@@ -205,3 +213,178 @@ body {
 .site-header a {
   transition: color 0.2s ease;
 }
+
+/* ─────────────────────────────────────────────
+   杂志级阅读增强
+   ───────────────────────────────────────────── */
+
+/* 导语段（正文首段）：略大、稍浅，作为 lead */
+.prose-body > p:first-of-type {
+  font-size: 1.02em;
+  color: var(--text-soft);
+  line-height: 1.8;
+}
+
+/* 首字下沉（drop cap） */
+.prose-body > p:first-of-type::first-letter {
+  font-family: var(--font-sans);
+  font-size: 3em;
+  font-weight: 700;
+  float: left;
+  line-height: 0.78;
+  margin: 0.04em 0.14em 0 0;
+  color: var(--brand);
+}
+
+/* 引文（pull-quote）：科技青左边线 + 浅底，正文同款无衬线，不用斜体 */
+.prose blockquote {
+  border-left: 4px solid var(--tech);
+  margin: 1.1rem 0;
+  padding: 0.5rem 1rem;
+  color: var(--text);
+  background: var(--btn-bg);
+  border-radius: 0 10px 10px 0;
+  font-size: 1em;
+}
+
+/* 文章封面图（杂志封面感） */
+.cover-img {
+  width: 100%;
+  max-height: 360px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 10px 30px -16px rgba(0, 0, 0, 0.4);
+}
+
+/* ─────────────────────────────────────────────
+   科技感增强
+   ───────────────────────────────────────────── */
+
+/* 侧栏目录：当前章节高亮（配合 Sidebar 的 IntersectionObserver） */
+.toc-link {
+  position: relative;
+  display: block;
+  transition: color 0.2s ease;
+}
+.toc-link.active {
+  color: var(--brand);
+  font-weight: 600;
+}
+.toc-link.active::before {
+  content: '';
+  position: absolute;
+  left: -0.9rem;
+  top: 0.15em;
+  bottom: 0.15em;
+  width: 3px;
+  border-radius: 2px;
+  background: var(--brand);
+}
+
+/* 暗色模式：固定网格底纹（低透明度覆盖层，仅暗色） */
+@media (prefers-color-scheme: dark) {
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image:
+      linear-gradient(var(--tech) 1px, transparent 1px),
+      linear-gradient(90deg, var(--tech) 1px, transparent 1px);
+    background-size: 40px 40px;
+    opacity: 0.05;
+  }
+}
+
+/* 顶部阅读进度条（细线 + 青→主题渐变） */
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0;
+  background: linear-gradient(90deg, var(--tech), var(--brand));
+  z-index: 60;
+  transition: width 0.08s linear;
+}
+
+/* 等宽元信息（日期 / 标签 / 链接）——科技 vs 人文张力 */
+.meta-mono {
+  font-family: var(--font-mono);
+  font-size: 0.8em;
+  letter-spacing: 0.02em;
+}
+
+/* ─────────────────────────────────────────────
+   首页右侧栏 widget（参考 blog.zhheo.com）
+   ───────────────────────────────────────────── */
+.widget-title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--text-soft);
+  margin-bottom: 0.75rem;
+}
+.author-avatar {
+  display: block;
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 3px solid var(--card-border);
+  box-shadow: 0 4px 14px -6px rgba(0, 0, 0, 0.2);
+}
+.qr-slot {
+  width: 120px;
+  height: 120px;
+  margin: 0.25rem auto 0;
+  border: 2px dashed var(--card-border);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-soft);
+  line-height: 1.4;
+  background: var(--btn-bg);
+}
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.tag-cloud .tag-pill {
+  cursor: default;
+}
+
+/* 首页分类方块：渐变圆角图标徽章（提升立体感） */
+.cat-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  color: #fff;
+  box-shadow: 0 8px 18px -8px rgba(0, 0, 0, 0.45);
+  transition: transform 0.25s ease;
+}
+a:hover .cat-badge {
+  transform: translateY(-2px) scale(1.04);
+}
+.cat-badge-ai {
+  background: linear-gradient(135deg, #6d8bff, #425aef);
+}
+.cat-badge-tools {
+  background: linear-gradient(135deg, #34e3d4, #0ea5e9);
+}
+.cat-badge-resources {
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+}
+.cat-badge-humanities {
+  background: linear-gradient(135deg, #fb7185, #f43f5e);
+}
+

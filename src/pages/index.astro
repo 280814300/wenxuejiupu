@@ -2,7 +2,8 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PostCard from '../components/PostCard.astro';
-import { SITE, COLUMNS, NAV } from '../consts';
+import Icon from '../components/Icon.astro';
+import { COLUMNS, NAV, SITE } from '../consts';
 
 const columns = ['ai', 'tools', 'resources', 'humanities'] as const;
 let all: any[] = [];
@@ -12,23 +13,39 @@ for (const col of columns) {
 }
 all.sort((a: any, b: any) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
 const recent = all.slice(0, 9);
+
+// 标签云：统计全站标签频次，按频次缩放字号
+const tagCounts: Record<string, number> = {};
+for (const e of all) {
+  for (const t of e.data.tags) tagCounts[t] = (tagCounts[t] || 0) + 1;
+}
+const tags = Object.entries(tagCounts).sort((a, b) => b[1] - a[1]);
+const maxC = Math.max(1, ...tags.map((t) => t[1]));
+const minC = Math.min(1, ...tags.map((t) => t[1]));
+const tagSize = (c: number) =>
+  maxC === minC ? 0.95 : (0.8 + ((c - minC) / (maxC - minC)) * 0.5).toFixed(2);
+
+// 各栏目文章数 + 总数 + 最近更新
+const counts: Record<string, number> = {};
+for (const c of columns) {
+  counts[c] = (await getCollection(c)).filter((e) => !e.data.draft).length;
+}
+const total = all.length;
+const lastUpdated = all.length ? all[0].data.pubDate : new Date();
 ---
 
 <BaseLayout>
-  <section class="text-center py-10">
-    <h1 class="text-4xl font-bold m-0">{SITE.title}</h1>
-    <p class="text-lg text-gray-600 mt-2">{SITE.slogan}</p>
-    <p class="text-gray-500 mt-1">{SITE.description}</p>
-  </section>
-
   <section class="grid grid-cols-2 sm:grid-cols-4 gap-3 my-8">
     {
       NAV.map((c) => (
         <a
           href={`/${c.slug}/`}
-          class="card block p-4 text-center no-underline text-inherit"
+          class="card flex flex-col items-center text-center no-underline text-inherit p-5"
         >
-          <div class="font-semibold">{c.name}</div>
+          <span class={`cat-badge cat-badge-${c.slug}`}>
+            <Icon name={COLUMNS[c.slug].icon} class="w-7 h-7" />
+          </span>
+          <div class="font-semibold mt-3">{c.name}</div>
           <div class="text-xs text-gray-500 mt-1 leading-snug">
             {COLUMNS[c.slug].desc}
           </div>
@@ -37,15 +54,75 @@ const recent = all.slice(0, 9);
     }
   </section>
 
-  <section>
-    <h2 class="text-xl font-bold mb-4">最新内容</h2>
-    <div class="grid gap-4">
-      {recent.map((e) => <PostCard entry={e} />)}
-      {
-        recent.length === 0 && (
-          <p class="text-gray-500">暂无内容，敬请期待。</p>
-        )
-      }
+  <section class="lg:grid lg:grid-cols-[1fr_300px] lg:gap-8 lg:items-start">
+    <!-- 左：最新内容 -->
+    <div>
+      <h2 class="text-xl font-bold mb-4">最新内容</h2>
+      <div class="grid gap-4">
+        {recent.map((e) => <PostCard entry={e} />)}
+        {
+          recent.length === 0 && (
+            <p class="text-gray-500">暂无内容，敬请期待。</p>
+          )
+        }
+      </div>
     </div>
+
+    <!-- 右：作者头像 / 公众号订阅 / 标签云 / 网站运营信息（参考 blog.zhheo.com 右侧栏） -->
+    <aside class="space-y-4 mt-8 lg:mt-0 lg:sticky lg:top-20">
+      <!-- 作者头像 -->
+      <div class="card p-4 text-center">
+        <div class="widget-title flex items-center justify-center gap-1.5">
+          <Icon name="author" class="w-4 h-4" /> 关于
+        </div>
+        <img src="/author-avatar.svg" alt={SITE.author} class="author-avatar" />
+        <div class="font-semibold mt-2">{SITE.author}</div>
+        <p class="text-sm text-gray-500 mt-1 leading-snug">{SITE.description}</p>
+      </div>
+
+      <!-- 公众号订阅 -->
+      <div class="card p-4">
+        <div class="widget-title flex items-center gap-1.5">
+          <Icon name="wechat" class="w-4 h-4" /> 公众号订阅
+        </div>
+        <div class="qr-slot">文学酒铺<br />公众号二维码</div>
+        <p class="text-xs text-gray-500 mt-2 leading-snug">
+          微信搜索「文学酒铺」关注；或把二维码图片放到 public/wechat-qr.png 自动显示。
+        </p>
+      </div>
+
+      <!-- 标签云 -->
+      <div class="card p-4">
+        <div class="widget-title flex items-center gap-1.5">
+          <Icon name="tags" class="w-4 h-4" /> 标签云
+        </div>
+        <div class="tag-cloud">
+          {
+            tags.map(([t, c]) => (
+              <span class="tag-pill" style={`font-size:${tagSize(c)}rem`}>#{t}</span>
+            ))
+          }
+          {tags.length === 0 && <span class="text-sm text-gray-500">暂无标签</span>}
+        </div>
+      </div>
+
+      <!-- 网站运营信息 -->
+      <div class="card p-4">
+        <div class="widget-title flex items-center gap-1.5">
+          <Icon name="info" class="w-4 h-4" /> 网站运营信息
+        </div>
+        <ul class="text-sm space-y-1.5 text-gray-600">
+          <li>文章总数：<b class="text-gray-900">{total}</b> 篇</li>
+          {
+            columns.map((c) => (
+              <li>{COLUMNS[c].name}：{counts[c]} 篇</li>
+            ))
+          }
+          <li>最近更新：{lastUpdated.toISOString().slice(0, 10)}</li>
+          <li>技术栈：Astro 5 · Cloudflare Pages</li>
+          <li>建站：2026 年</li>
+        </ul>
+      </div>
+    </aside>
   </section>
 </BaseLayout>

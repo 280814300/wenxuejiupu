@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
+import rehypeAutoLinkDomain from './src/plugins/rehype-auto-link-domain.js';
 
 // https://wenxuejiupu.com — 纯静态输出，部署目标 Cloudflare Pages
 // 强制要求：trailingSlash 'always' + build.format 'directory'
@@ -10,6 +11,10 @@ export default defineConfig({
   trailingSlash: 'always',
   build: {
     format: 'directory',
+  },
+  // 正文里出现的 wenxuejiupu.com 自动转内链（站点标准，见 发布流程.md）
+  markdown: {
+    rehypePlugins: [rehypeAutoLinkDomain],
   },
   integrations: [
     tailwind(),

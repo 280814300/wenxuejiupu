@@ -9,9 +9,13 @@ const year = new Date().getFullYear();
   >
     <p class="m-0">{SITE.slogan}</p>
     <p class="m-0">
-      © {year} {SITE.title} ·
-      <a href="/rss.xml" class="text-inherit hover:text-brand">RSS</a> ·
+      © {year} {SITE.title}
+    </p>
+    <p class="m-0 flex flex-wrap gap-x-3 gap-y-1">
+      <a href="/guestbook/" class="text-inherit hover:text-brand">留言</a>
+      <a href="/rss.xml" class="text-inherit hover:text-brand">RSS</a>
       <a href="/sitemap-index.xml" class="text-inherit hover:text-brand">站点地图</a>
+      <a href="/about/" class="text-inherit hover:text-brand">关于</a>
     </p>
     <p class="m-0 text-xs">
       纯静态站点，部署于 Cloudflare Pages。
