@@ -18,13 +18,6 @@ draft: true
 | 作者 | 露丝·赖希尓 |
 
 **常见搜索词（电商 / 豆瓣）**：千面美食家、露丝·赖希尓、随笔、正版
-## 📜 书中摘录
-
-> Pull up a chair. Take a taste. Come join us. Life is so endlessly delicious.
-
-> 对我来说，烹饪是一种取悦他人、告诉他人我爱他们的方式。
-
-> 我离不开黄油。黄油大概是我最偏爱的一种食物。
 关于《千面美食家》
 
 露丝·赖希尓（Ruth Reichl）是《纽约时报》前美食评论员，这本回忆录写她如何在食物与身份之间游走——一个"伪装"成不同人去探店的评论员故事。
@@ -36,6 +29,11 @@ draft: true
 《千面美食家》适合谁阅读
 
 美食爱好者；喜欢饮食文化书写的人。
+## 📜 书中摘录
+
+> “Pull up a chair. Take a taste. Come join us. Life is so endlessly delicious.”
+> “对我来说，烹饪是一种取悦他人、告诉他人我爱他们的方式。”
+> “我离不开黄油。黄油大概是我最偏爱的一种食物。”
 
 ## 📥 试听与转存
 
