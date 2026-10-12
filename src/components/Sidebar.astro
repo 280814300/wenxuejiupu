@@ -13,7 +13,7 @@ const columns = ['ai', 'tools', 'resources', 'humanities'] as const;
 // 近期更新（全站最新 6 篇）
 let recent: any[] = [];
 for (const c of columns) {
-  const entries = (await getCollection(c)).filter((e) => !e.data.draft);
+  const entries = (await getCollection(c)).filter((e) => import.meta.env.DEV || !e.data.draft);
   recent = recent.concat(entries);
 }
 recent.sort(

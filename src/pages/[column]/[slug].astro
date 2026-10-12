@@ -10,7 +10,7 @@ export async function getStaticPaths() {
   for (const col of columns) {
     const entries = await getCollection(col);
     for (const entry of entries) {
-      if (entry.data.draft) continue;
+      if (entry.data.draft && !import.meta.env.DEV) continue;
       paths.push({
         params: {
           column: col,

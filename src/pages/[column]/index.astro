@@ -12,7 +12,7 @@ export async function getStaticPaths() {
 const column = Astro.params.column as keyof typeof COLUMNS;
 const colInfo = COLUMNS[column];
 const entries = (await getCollection(column))
-  .filter((e) => !e.data.draft)
+  .filter((e) => import.meta.env.DEV || !e.data.draft)
   .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
 ---
 

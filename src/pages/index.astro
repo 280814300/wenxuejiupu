@@ -8,7 +8,7 @@ import { COLUMNS, NAV, SITE } from '../consts';
 const columns = ['ai', 'tools', 'resources', 'humanities'] as const;
 let all: any[] = [];
 for (const col of columns) {
-  const entries = (await getCollection(col)).filter((e) => !e.data.draft);
+  const entries = (await getCollection(col)).filter((e) => import.meta.env.DEV || !e.data.draft);
   all = all.concat(entries);
 }
 all.sort((a: any, b: any) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
@@ -28,7 +28,7 @@ const tagSize = (c: number) =>
 // 各栏目文章数 + 总数 + 最近更新
 const counts: Record<string, number> = {};
 for (const c of columns) {
-  counts[c] = (await getCollection(c)).filter((e) => !e.data.draft).length;
+  counts[c] = (await getCollection(c)).filter((e) => import.meta.env.DEV || !e.data.draft).length;
 }
 const total = all.length;
 const lastUpdated = all.length ? all[0].data.pubDate : new Date();
