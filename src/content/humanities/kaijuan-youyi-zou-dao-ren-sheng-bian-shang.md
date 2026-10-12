@@ -10,6 +10,12 @@ draft: true
 
 > 本文整理自**梁文道《开卷八分钟》**音频听书专栏，本期书单为 **杨绛《走到人生边上》**。梁文道在《开卷八分钟》里用八分钟讲透一本书，本篇把音频核心内容写成图文，方便你通勤、睡前用耳朵重读经典，也可一键转存夸克网盘音频随时听。
 
+<div class="conclusion-box">
+  <div class="conclusion-box__head">📌 核心结论</div>
+  <p class="conclusion-text">杨绛96岁写下的《走到人生边上》。梁文道谈它：一个走过世纪的人，如何平静地讨论灵魂与价值。</p>
+  <p class="conclusion-meta">主讲：梁文道 · 整理：文学酒铺</p>
+</div>
+
 ## 📖 书籍信息
 
 | 项目 | 内容 |
@@ -49,3 +55,22 @@ draft: true
 ## 📥 试听与转存
 
 全套《开卷八分钟》音频正在整理分享中，本集的夸克网盘链接稍后补上，敬请期待。
+
+## ❓ 常见问题（FAQ）
+
+<div class="faq-item">
+  <div class="faq-q">Q1：《走到人生边上》主要讲什么？</div>
+  <div class="faq-a">杨绛在 96 岁高龄写下的散文集，分“自问自答”与“注释”两部分，探讨灵魂、命运、生死与价值。文字洗尽铅华，像一个老人坐在窗边慢慢说。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q2：梁文道为什么推荐《走到人生边上》？</div>
+  <div class="faq-a">梁文道欣赏它的“不慌”——面对最大的未知（死亡），杨绛没有故作豁达，也没有恐惧，只是认真地想、诚实地写。这种从容，是阅历给的礼物。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q3：《走到人生边上》适合谁阅读？</div>
+  <div class="faq-a">开始思考“意义”这件事的人；想看大家如何平静面对老去与失去的人。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q4：《走到人生边上》是什么类型的书？</div>
+  <div class="faq-a">《走到人生边上》属于「随笔」类读物，可在文学酒铺按题材检索同类讲书。</div>
+</div>

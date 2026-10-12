@@ -10,6 +10,12 @@ draft: false
 
 > 本文整理自**梁文道《开卷八分钟》**音频听书专栏，本期书单为 **贾雷德·戴蒙德《大崩坏》**。梁文道在《开卷八分钟》里用八分钟讲透一本书，本篇把音频核心内容写成图文，方便你通勤、睡前用耳朵重读经典，也可一键转存夸克网盘音频随时听。
 
+<div class="conclusion-box">
+  <div class="conclusion-box__head">📌 核心结论</div>
+  <p class="conclusion-text">戴蒙德《大崩坏》。梁文道欣赏它把环保从道德说教变成冷峻的历史账本：崩溃前夜的人，和我们一样坚信这次不一样。</p>
+  <p class="conclusion-meta">主讲：梁文道 · 整理：文学酒铺</p>
+</div>
+
 ## 📖 书籍信息
 
 | 项目 | 内容 |
@@ -52,3 +58,22 @@ draft: false
 本集完整音频已分享至夸克网盘，点下方链接即可**一键试听 / 转存**到你的夸克网盘，随时随地听梁文道讲书。
 
 - 夸克网盘（本集音频）：[贾雷德·戴蒙德《大崩坏》 · 一键试听 / 转存](https://pan.quark.cn/s/dc13ba2aebff)
+
+## ❓ 常见问题（FAQ）
+
+<div class="faq-item">
+  <div class="faq-q">Q1：《大崩坏》主要讲什么？</div>
+  <div class="faq-a">贾雷德·戴蒙德继《枪炮、病菌与钢铁》后，用一个个文明崩溃的案例（复活节岛、玛雅、格陵兰维京人……）追问：社会为什么会自己走向毁灭？</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q2：梁文道为什么推荐《大崩坏》？</div>
+  <div class="faq-a">梁文道欣赏它把"环保"从道德说教变成冷峻的历史账本：资源耗尽与环境崩溃，往往发生在人们还觉得自己过得挺好时。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q3：《大崩坏》适合谁阅读？</div>
+  <div class="faq-a">关心环境、社会韧性的人；喜欢大历史叙事的读者。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q4：《大崩坏》是什么类型的书？</div>
+  <div class="faq-a">《大崩坏》属于「科学」类读物，可在文学酒铺按题材检索同类讲书。</div>
+</div>

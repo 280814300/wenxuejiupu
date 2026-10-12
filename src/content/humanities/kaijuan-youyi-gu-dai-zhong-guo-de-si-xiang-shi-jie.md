@@ -10,6 +10,12 @@ draft: true
 
 > 本文整理自**梁文道《开卷八分钟》**音频听书专栏，本期书单为 **史华慈《古代中国的思想世界》**。梁文道在《开卷八分钟》里用八分钟讲透一本书，本篇把音频核心内容写成图文，方便你通勤、睡前用耳朵重读经典，也可一键转存夸克网盘音频随时听。
 
+<div class="conclusion-box">
+  <div class="conclusion-box__head">📌 核心结论</div>
+  <p class="conclusion-text">史华慈《古代中国的思想世界》。梁文道推荐一种把中国思想当思想读的读法：不是考据，而是追问根本问题。</p>
+  <p class="conclusion-meta">主讲：梁文道 · 整理：文学酒铺</p>
+</div>
+
 ## 📖 书籍信息
 
 | 项目 | 内容 |
@@ -51,3 +57,22 @@ draft: true
 本集完整音频已分享至夸克网盘，点下方链接即可**一键试听 / 转存**到你的夸克网盘，随时随地听梁文道讲书。
 
 - 夸克网盘（本集音频）：[史华慈《古代中国的思想世界》 · 一键试听 / 转存](https://pan.quark.cn/s/0e066c71e397)
+
+## ❓ 常见问题（FAQ）
+
+<div class="faq-item">
+  <div class="faq-q">Q1：《古代中国的思想世界》主要讲什么？</div>
+  <div class="faq-a">史华慈（Benjamin I. Schwartz）是哈佛汉学巨擘，这本书系统勾勒从先秦到汉初中国思想的基本命题与张力，是思想史领域的里程碑。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q2：梁文道为什么推荐《古代中国的思想世界》？</div>
+  <div class="faq-a">梁文道推荐它，是推荐一种"把中国思想当思想"的读法——不是考据，而是追问那些根本问题。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q3：《古代中国的思想世界》适合谁阅读？</div>
+  <div class="faq-a">对中国思想史、比较哲学感兴趣的读者；有一定阅读基础的人。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q4：《古代中国的思想世界》是什么类型的书？</div>
+  <div class="faq-a">《古代中国的思想世界》属于「人文」类读物，可在文学酒铺按题材检索同类讲书。</div>
+</div>

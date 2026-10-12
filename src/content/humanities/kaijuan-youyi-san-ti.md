@@ -10,6 +10,12 @@ draft: true
 
 > 本文整理自**梁文道《开卷八分钟》**音频听书专栏，本期书单为 **刘慈欣《三体》**。梁文道在《开卷八分钟》里用八分钟讲透一本书，本篇把音频核心内容写成图文，方便你通勤、睡前用耳朵重读经典，也可一键转存夸克网盘音频随时听。
 
+<div class="conclusion-box">
+  <div class="conclusion-box__head">📌 核心结论</div>
+  <p class="conclusion-text">刘慈欣的《三体》把中国科幻推向世界。梁文道谈它如何把“黑暗森林”变成一代人的宇宙观隐喻。</p>
+  <p class="conclusion-meta">主讲：梁文道 · 整理：文学酒铺</p>
+</div>
+
 ## 📖 书籍信息
 
 | 项目 | 内容 |
@@ -55,3 +61,22 @@ draft: true
 ## 📥 试听与转存
 
 全套《开卷八分钟》音频正在整理分享中，本集的夸克网盘链接稍后补上，敬请期待。
+
+## ❓ 常见问题（FAQ）
+
+<div class="faq-item">
+  <div class="faq-q">Q1：《三体》主要讲什么？</div>
+  <div class="faq-a">2008 年问世的科幻巨著，从文革创伤切入，层层展开“三体文明”与人类的存亡博弈。它把物理学、历史与人性压缩进一个冷酷的宇宙图景。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q2：梁文道为什么推荐《三体》？</div>
+  <div class="faq-a">梁文道看重的，是刘慈欣把“宏大”重新还给了文学——当尺度拉到光年与文明，个人的悲欢忽然有了另一种重量。他也提醒：书里的冷，是对人类中心主义的必要矫正。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q3：《三体》适合谁阅读？</div>
+  <div class="faq-a">想读点“硬”的、又能想点“大”的人；对文明与生存伦理好奇的读者。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q4：《三体》是什么类型的书？</div>
+  <div class="faq-a">《三体》属于「科幻」类读物，可在文学酒铺按题材检索同类讲书。</div>
+</div>

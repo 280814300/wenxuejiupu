@@ -10,6 +10,12 @@ draft: true
 
 > 本文整理自**梁文道《开卷八分钟》**音频听书专栏，本期书单为 **楊照《十年后的台湾》**。梁文道在《开卷八分钟》里用八分钟讲透一本书，本篇把音频核心内容写成图文，方便你通勤、睡前用耳朵重读经典，也可一键转存夸克网盘音频随时听。
 
+<div class="conclusion-box">
+  <div class="conclusion-box__head">📌 核心结论</div>
+  <p class="conclusion-text">楊照《十年后的台湾》。梁文道同属读书人阵营，读杨照是读一种对脚下土地的认真打量。</p>
+  <p class="conclusion-meta">主讲：梁文道 · 整理：文学酒铺</p>
+</div>
+
 ## 📖 书籍信息
 
 | 项目 | 内容 |
@@ -52,3 +58,22 @@ draft: true
 本集完整音频已分享至夸克网盘，点下方链接即可**一键试听 / 转存**到你的夸克网盘，随时随地听梁文道讲书。
 
 - 夸克网盘（本集音频）：[楊照《十年后的台湾》 · 一键试听 / 转存](https://pan.quark.cn/s/a342544ae815)
+
+## ❓ 常见问题（FAQ）
+
+<div class="faq-item">
+  <div class="faq-q">Q1：《十年后的台湾》主要讲什么？</div>
+  <div class="faq-a">杨照是台湾历史学者、作家，这本书围绕"十年后"的命题，谈台湾的社会、文化与认同走向，带着知识分子的忧思。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q2：梁文道为什么推荐《十年后的台湾》？</div>
+  <div class="faq-a">梁文道同属"读书人"阵营，读杨照是读一种对脚下土地的认真打量，而不是唱高调。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q3：《十年后的台湾》适合谁阅读？</div>
+  <div class="faq-a">关心台湾社会文化、两岸议题的读者；喜欢深度评论的人。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q4：《十年后的台湾》是什么类型的书？</div>
+  <div class="faq-a">《十年后的台湾》属于「人文」类读物，可在文学酒铺按题材检索同类讲书。</div>
+</div>

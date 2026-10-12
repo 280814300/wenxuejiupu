@@ -10,6 +10,12 @@ draft: true
 
 > 本文整理自**梁文道《开卷八分钟》**音频听书专栏，本期书单为 **维斯纳《动物必须刷牙吗？》**。梁文道在《开卷八分钟》里用八分钟讲透一本书，本篇把音频核心内容写成图文，方便你通勤、睡前用耳朵重读经典，也可一键转存夸克网盘音频随时听。
 
+<div class="conclusion-box">
+  <div class="conclusion-box__head">📌 核心结论</div>
+  <p class="conclusion-text">维斯纳《动物必须刷牙吗？》。梁文道选它，是选一本正经又好玩的科普，证明开卷不只有人文。</p>
+  <p class="conclusion-meta">主讲：梁文道 · 整理：文学酒铺</p>
+</div>
+
 ## 📖 书籍信息
 
 | 项目 | 内容 |
@@ -52,3 +58,22 @@ draft: true
 本集完整音频已分享至夸克网盘，点下方链接即可**一键试听 / 转存**到你的夸克网盘，随时随地听梁文道讲书。
 
 - 夸克网盘（本集音频）：[维斯纳《动物必须刷牙吗？》 · 一键试听 / 转存](https://pan.quark.cn/s/2f2f7bf3df70)
+
+## ❓ 常见问题（FAQ）
+
+<div class="faq-item">
+  <div class="faq-q">Q1：《动物必须刷牙吗？》主要讲什么？</div>
+  <div class="faq-a">两位德国作者（一位动物园兽医、一位科普记者）用问答形式，聊动物怎么保养身体——从牙齿到羽毛，爆料满满。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q2：梁文道为什么推荐《动物必须刷牙吗？》？</div>
+  <div class="faq-a">梁文道选它，是选一本"正经又好玩"的科普，证明开卷八分钟不只有人文，也有对世界的好奇。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q3：《动物必须刷牙吗？》适合谁阅读？</div>
+  <div class="faq-a">被科普治愈的人；想给孩子也讲点真知识的大人。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q4：《动物必须刷牙吗？》是什么类型的书？</div>
+  <div class="faq-a">《动物必须刷牙吗？》属于「科学」类读物，可在文学酒铺按题材检索同类讲书。</div>
+</div>

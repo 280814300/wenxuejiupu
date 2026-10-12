@@ -10,6 +10,12 @@ draft: true
 
 > 本文整理自**梁文道《开卷八分钟》**音频听书专栏，本期书单为 **詹姆斯·索罗维基《群众的智慧》**。梁文道在《开卷八分钟》里用八分钟讲透一本书，本篇把音频核心内容写成图文，方便你通勤、睡前用耳朵重读经典，也可一键转存夸克网盘音频随时听。
 
+<div class="conclusion-box">
+  <div class="conclusion-box__head">📌 核心结论</div>
+  <p class="conclusion-text">索罗维基《群众的智慧》。梁文道提醒：群体智慧不是民主投票万能，而是依赖独立、多元、分散的判断。</p>
+  <p class="conclusion-meta">主讲：梁文道 · 整理：文学酒铺</p>
+</div>
+
 ## 📖 书籍信息
 
 | 项目 | 内容 |
@@ -52,3 +58,22 @@ draft: true
 本集完整音频已分享至夸克网盘，点下方链接即可**一键试听 / 转存**到你的夸克网盘，随时随地听梁文道讲书。
 
 - 夸克网盘（本集音频）：[詹姆斯·索罗维基《群众的智慧》 · 一键试听 / 转存](https://pan.quark.cn/s/dfd84bc902d4)
+
+## ❓ 常见问题（FAQ）
+
+<div class="faq-item">
+  <div class="faq-q">Q1：《群众的智慧》主要讲什么？</div>
+  <div class="faq-a">詹姆斯·索罗维基提出一个反直觉结论：在一定条件下，群体的判断能胜过专家。这本书用市场、预测、搜救等例子论证"群体的平均数"为何靠谱。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q2：梁文道为什么推荐《群众的智慧》？</div>
+  <div class="faq-a">梁文道常引用它来提醒：群体智慧不是"民主投票万能"，而是依赖独立、多元、分散的判断——条件不对，群体也会变蠢。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q3：《群众的智慧》适合谁阅读？</div>
+  <div class="faq-a">管理者；对集体决策、预测市场好奇的人。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q4：《群众的智慧》是什么类型的书？</div>
+  <div class="faq-a">《群众的智慧》属于「财经」类读物，可在文学酒铺按题材检索同类讲书。</div>
+</div>

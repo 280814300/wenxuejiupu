@@ -10,6 +10,12 @@ draft: true
 
 > 本文整理自**梁文道《开卷八分钟》**音频听书专栏，本期书单为 **俞可平《民主是个好东西》**。梁文道在《开卷八分钟》里用八分钟讲透一本书，本篇把音频核心内容写成图文，方便你通勤、睡前用耳朵重读经典，也可一键转存夸克网盘音频随时听。
 
+<div class="conclusion-box">
+  <div class="conclusion-box__head">📌 核心结论</div>
+  <p class="conclusion-text">俞可平《民主是个好东西》。梁文道读它，是把一个被口号化的词，重新放回学理与现实的讨论场。</p>
+  <p class="conclusion-meta">主讲：梁文道 · 整理：文学酒铺</p>
+</div>
+
 ## 📖 书籍信息
 
 | 项目 | 内容 |
@@ -57,3 +63,22 @@ draft: true
 本集完整音频已分享至夸克网盘，点下方链接即可**一键试听 / 转存**到你的夸克网盘，随时随地听梁文道讲书。
 
 - 夸克网盘（本集音频）：[俞可平《民主是个好东西》 · 一键试听 / 转存](https://pan.quark.cn/s/e5fee01c170f)
+
+## ❓ 常见问题（FAQ）
+
+<div class="faq-item">
+  <div class="faq-q">Q1：《民主是个好东西》主要讲什么？</div>
+  <div class="faq-a">俞可平是政治学者，这本书系统阐述他对民主作为价值与制度的看法，试图把讨论拉回理性。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q2：梁文道为什么推荐《民主是个好东西》？</div>
+  <div class="faq-a">梁文道读它，是把一个被口号化的词，重新放回学理与现实的讨论场。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q3：《民主是个好东西》适合谁阅读？</div>
+  <div class="faq-a">关心政治哲学、公共讨论的读者。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q4：《民主是个好东西》是什么类型的书？</div>
+  <div class="faq-a">《民主是个好东西》属于「时政」类读物，可在文学酒铺按题材检索同类讲书。</div>
+</div>

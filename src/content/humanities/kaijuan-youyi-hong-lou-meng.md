@@ -10,6 +10,12 @@ draft: true
 
 > 本文整理自**梁文道《开卷八分钟》**音频听书专栏，本期书单为 **曹雪芹《红楼梦》**。梁文道在《开卷八分钟》里用八分钟讲透一本书，本篇把音频核心内容写成图文，方便你通勤、睡前用耳朵重读经典，也可一键转存夸克网盘音频随时听。
 
+<div class="conclusion-box">
+  <div class="conclusion-box__head">📌 核心结论</div>
+  <p class="conclusion-text">梁文道读《红楼梦》，不谈“红学”门派，只谈曹雪芹如何用一碗茶、一件衣裳写出整个家族的下坠。</p>
+  <p class="conclusion-meta">主讲：梁文道 · 整理：文学酒铺</p>
+</div>
+
 ## 📖 书籍信息
 
 | 项目 | 内容 |
@@ -55,3 +61,22 @@ draft: true
 ## 📥 试听与转存
 
 全套《开卷八分钟》音频正在整理分享中，本集的夸克网盘链接稍后补上，敬请期待。
+
+## ❓ 常见问题（FAQ）
+
+<div class="faq-item">
+  <div class="faq-q">Q1：《红楼梦》主要讲什么？</div>
+  <div class="faq-a">中国古典小说的巅峰。曹雪芹“披阅十载，增删五次”，留下一部未竟的巨著。它写贾府的盛与衰，写一群少女的命运，也写一种精致文明如何自己把自己吃完。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q2：梁文道为什么推荐《红楼梦》？</div>
+  <div class="faq-a">梁文道最欣赏的是“无事的悲剧”——没有大反派，没有惊天阴谋，只是日常的细节一点点累积，繁华就塌了。这种写法，比任何控诉都沉重。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q3：《红楼梦》适合谁阅读？</div>
+  <div class="faq-a">想慢下来读一部“大书”的人；对人情、饮食、器物背后的隐喻有兴趣的人。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q4：《红楼梦》是什么类型的书？</div>
+  <div class="faq-a">《红楼梦》属于「文学」类读物，可在文学酒铺按题材检索同类讲书。</div>
+</div>

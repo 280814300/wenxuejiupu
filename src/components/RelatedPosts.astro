@@ -1,0 +1,47 @@
+---
+import { getCollection } from 'astro:content';
+
+interface Props {
+  slug: string;
+  collection: string;
+  tags: string[];
+}
+const { slug, collection, tags } = Astro.props;
+
+// 相关度：共享标签数降序，其次按发布时间倒序；生产环境排除草稿
+const pool = (await getCollection(collection)).filter(
+  (e) => e.data.slug !== slug && (import.meta.env.DEV || !e.data.draft)
+);
+const scored = pool
+  .map((e) => ({
+    e,
+    shared: e.data.tags.filter((t: string) => tags.includes(t)).length,
+  }))
+  .sort(
+    (a, b) =>
+      b.shared - a.shared ||
+      b.e.data.pubDate.getTime() - a.e.data.pubDate.getTime()
+  );
+const related = scored.slice(0, 6);
+---
+
+{
+  related.length > 0 && (
+    <section class="related-block mt-8">
+      <div class="font-semibold mb-3 text-sm">相关推荐</div>
+      <div class="grid grid-cols-2 gap-3">
+        {related.map(({ e }) => (
+          <a
+            href={`/${e.collection}/${e.data.slug}/`}
+            class="card block p-3 no-underline text-inherit hover:text-brand"
+          >
+            <div class="font-medium leading-snug text-sm">{e.data.title}</div>
+            <div class="text-xs text-gray-500 mt-1">
+              {e.data.pubDate.toISOString().slice(0, 10)}
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+  )
+}

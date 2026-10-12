@@ -10,6 +10,12 @@ draft: true
 
 > 本文整理自**梁文道《开卷八分钟》**音频听书专栏，本期书单为 **宋鸿兵《货币战争》**。梁文道在《开卷八分钟》里用八分钟讲透一本书，本篇把音频核心内容写成图文，方便你通勤、睡前用耳朵重读经典，也可一键转存夸克网盘音频随时听。
 
+<div class="conclusion-box">
+  <div class="conclusion-box__head">📌 核心结论</div>
+  <p class="conclusion-text">宋鸿兵的《货币战争》以惊悚笔法讲述金融权力家族的故事。梁文道读它，重点不在真伪，而在它为何能火。</p>
+  <p class="conclusion-meta">主讲：梁文道 · 整理：文学酒铺</p>
+</div>
+
 ## 📖 书籍信息
 
 | 项目 | 内容 |
@@ -49,3 +55,22 @@ draft: true
 ## 📥 试听与转存
 
 全套《开卷八分钟》音频正在整理分享中，本集的夸克网盘链接稍后补上，敬请期待。
+
+## ❓ 常见问题（FAQ）
+
+<div class="faq-item">
+  <div class="faq-q">Q1：《货币战争》主要讲什么？</div>
+  <div class="faq-a">2007 年出版的财经畅销书，用一条“罗斯柴尔德家族操控世界”的叙事线，串起两百年金融史。它半是考证、半是演绎，读来像金融悬疑小说。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q2：梁文道为什么推荐《货币战争》？</div>
+  <div class="faq-a">梁文道不把它当严谨史书，而把它当“时代情绪标本”——为什么大家愿意相信“有一小撮人幕后操纵”？因为它给复杂世界一个简单答案。读懂这本书的流行，比读懂书本身更重要。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q3：《货币战争》适合谁阅读？</div>
+  <div class="faq-a">对金融好奇但怕枯燥的人；想理解“通俗叙事如何塑造认知”的人。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q4：《货币战争》是什么类型的书？</div>
+  <div class="faq-a">《货币战争》属于「财经」类读物，可在文学酒铺按题材检索同类讲书。</div>
+</div>

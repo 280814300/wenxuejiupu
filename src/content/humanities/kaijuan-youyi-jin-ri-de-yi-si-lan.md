@@ -10,6 +10,12 @@ draft: true
 
 > 本文整理自**梁文道《开卷八分钟》**音频听书专栏，本期书单为 **阿赫迈德《今日的伊斯兰》**。梁文道在《开卷八分钟》里用八分钟讲透一本书，本篇把音频核心内容写成图文，方便你通勤、睡前用耳朵重读经典，也可一键转存夸克网盘音频随时听。
 
+<div class="conclusion-box">
+  <div class="conclusion-box__head">📌 核心结论</div>
+  <p class="conclusion-text">阿赫迈德《今日的伊斯兰》。梁文道看重它由内而外的视角：理解一个文明，得先听它自己人怎么讲。</p>
+  <p class="conclusion-meta">主讲：梁文道 · 整理：文学酒铺</p>
+</div>
+
 ## 📖 书籍信息
 
 | 项目 | 内容 |
@@ -52,3 +58,22 @@ draft: true
 本集完整音频已分享至夸克网盘，点下方链接即可**一键试听 / 转存**到你的夸克网盘，随时随地听梁文道讲书。
 
 - 夸克网盘（本集音频）：[阿赫迈德《今日的伊斯兰》 · 一键试听 / 转存](https://pan.quark.cn/s/8e0e8aee9d67)
+
+## ❓ 常见问题（FAQ）
+
+<div class="faq-item">
+  <div class="faq-q">Q1：《今日的伊斯兰》主要讲什么？</div>
+  <div class="faq-a">阿赫迈德（Akbar S. Ahmed）是巴基斯坦人类学家、外交官，这本书向西方读者解释伊斯兰世界的复杂与多样，试图打破"文明冲突"的单一想象。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q2：梁文道为什么推荐《今日的伊斯兰》？</div>
+  <div class="faq-a">梁文道看重它"由内而外"的视角：理解一个宗教文明，得先听它自己人怎么讲，而不是只听别人替它下定义。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q3：《今日的伊斯兰》适合谁阅读？</div>
+  <div class="faq-a">想超越"文明冲突"叙事、理解伊斯兰世界的人。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q4：《今日的伊斯兰》是什么类型的书？</div>
+  <div class="faq-a">《今日的伊斯兰》属于「人文」类读物，可在文学酒铺按题材检索同类讲书。</div>
+</div>

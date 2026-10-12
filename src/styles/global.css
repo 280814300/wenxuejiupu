@@ -82,10 +82,25 @@ body {
 .prose li {
   margin: 0.3rem 0;
 }
+/* 链接下划线动画（从中间展开）：正文 / 顶栏 / 卡片内链接 */
+.prose a,
+.site-header a,
+.card a {
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s ease, color 0.2s ease;
+  padding-bottom: 1px;
+}
 .prose a {
   color: var(--brand);
-  text-decoration: underline;
-  text-underline-offset: 2px;
+}
+.prose a:hover,
+.site-header a:hover,
+.card a:hover {
+  background-size: 100% 2px;
 }
 .prose code {
   background: var(--btn-bg);
@@ -133,6 +148,8 @@ body {
 
 /* 卡片（zhheo 式：大圆角 + 柔和阴影 + hover 上浮 / 主题色描边） */
 .card {
+  position: relative;
+  overflow: hidden;
   background: var(--card-bg);
   border: 1px solid var(--card-border);
   border-radius: 14px;
@@ -144,6 +161,27 @@ body {
   transform: translateY(-3px);
   box-shadow: 0 14px 28px -12px var(--brand);
   border-color: var(--brand);
+}
+/* 卡片 hover 光扫高光（斜向品牌色微光，亮/暗主题自适应） */
+.card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    100deg,
+    transparent,
+    color-mix(in srgb, var(--brand) 22%, transparent),
+    transparent
+  );
+  transform: skewX(-16deg);
+  transition: left 0.7s ease;
+  pointer-events: none;
+}
+.card:hover::after {
+  left: 130%;
 }
 
 /* 标签 pill（主题色浅底） */
@@ -211,7 +249,7 @@ body {
   transition: background-color 0.4s ease, border-color 0.4s ease;
 }
 .site-header a {
-  transition: color 0.2s ease;
+  text-decoration: none;
 }
 
 /* ─────────────────────────────────────────────
@@ -303,6 +341,50 @@ body {
   color: var(--text-soft);
   margin: 0.9rem 0 0;
   line-height: 1.7;
+}
+
+/* 核心结论卡：首屏一句话书评（品牌色左边线 + 柔和渐变底，呼应摘录卡语言） */
+.conclusion-box {
+  background: linear-gradient(135deg, var(--card-bg), color-mix(in srgb, var(--brand) 7%, var(--card-bg)));
+  border: 1px solid var(--card-border);
+  border-left: 4px solid var(--brand);
+  border-radius: 14px;
+  padding: 1.1rem 1.2rem;
+  margin: 1.2rem 0;
+  box-shadow: 0 4px 14px -6px rgba(0,0,0,0.12);
+}
+.conclusion-box__head {
+  font-family: var(--font-mono);
+  font-size: 0.8em;
+  letter-spacing: 0.05em;
+  color: var(--text-soft);
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+.conclusion-text {
+  margin: 0;
+  font-size: 1.06em;
+  line-height: 1.78;
+  color: var(--text);
+}
+.conclusion-meta {
+  margin: 0.7rem 0 0;
+  font-size: 0.8em;
+  color: var(--text-soft);
+}
+
+/* FAQ 区块：问答卡片（利于精选摘要 + 大模型引用） */
+.faq-item { margin: 1.1rem 0; }
+.faq-q {
+  font-weight: 700;
+  font-size: 1.05em;
+  color: var(--text);
+  margin: 0 0 0.45rem;
+}
+.faq-a {
+  margin: 0;
+  line-height: 1.8;
+  color: var(--text);
 }
 
 /* ─────────────────────────────────────────────
@@ -435,4 +517,20 @@ a:hover .cat-badge {
 .cat-badge-humanities {
   background: linear-gradient(135deg, #fb7185, #f43f5e);
 }
+
+/* 分类卡片 hover 显示的箭头（斜向滑入，提示可点击） */
+.cat-arrow {
+  margin-top: 0.35rem;
+  font-size: 1.1rem;
+  line-height: 1;
+  color: var(--brand);
+  opacity: 0;
+  transform: translateX(-6px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+a.card:hover .cat-arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 

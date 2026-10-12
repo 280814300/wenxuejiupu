@@ -10,6 +10,12 @@ draft: true
 
 > 本文整理自**梁文道《开卷八分钟》**音频听书专栏，本期书单为 **当年明月《明朝那些事儿》**。梁文道在《开卷八分钟》里用八分钟讲透一本书，本篇把音频核心内容写成图文，方便你通勤、睡前用耳朵重读经典，也可一键转存夸克网盘音频随时听。
 
+<div class="conclusion-box">
+  <div class="conclusion-box__head">📌 核心结论</div>
+  <p class="conclusion-text">当年明月的《明朝那些事儿》。梁文道谈它：通俗不是浅薄，让历史“有人味”本身就是贡献。</p>
+  <p class="conclusion-meta">主讲：梁文道 · 整理：文学酒铺</p>
+</div>
+
 ## 📖 书籍信息
 
 | 项目 | 内容 |
@@ -49,3 +55,22 @@ draft: true
 ## 📥 试听与转存
 
 全套《开卷八分钟》音频正在整理分享中，本集的夸克网盘链接稍后补上，敬请期待。
+
+## ❓ 常见问题（FAQ）
+
+<div class="faq-item">
+  <div class="faq-q">Q1：《明朝那些事儿》主要讲什么？</div>
+  <div class="faq-a">当年明月（石悦）以网络连载起家的明史通俗读物，用口语化、带吐槽的笔法重写明朝三百年。它让无数人第一次“读完了”一部通史。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q2：梁文道为什么推荐《明朝那些事儿》？</div>
+  <div class="faq-a">梁文道肯定它的“破圈”价值：历史不该锁在学术腔里。当年明月把人物写活了——朱元璋的疑心、王阳明的悟道，都成了可感的故事。通俗的尽头，是让更多人上路。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q3：《明朝那些事儿》适合谁阅读？</div>
+  <div class="faq-a">被正史劝退、想先“听个热闹”的人；写作者（学怎么把干货讲得不困）。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q4：《明朝那些事儿》是什么类型的书？</div>
+  <div class="faq-a">《明朝那些事儿》属于「历史」类读物，可在文学酒铺按题材检索同类讲书。</div>
+</div>

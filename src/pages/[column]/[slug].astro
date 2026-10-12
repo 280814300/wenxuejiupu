@@ -2,6 +2,7 @@
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Sidebar from '../../components/Sidebar.astro';
+import RelatedPosts from '../../components/RelatedPosts.astro';
 import { COLUMNS, SITE } from '../../consts';
 
 export async function getStaticPaths() {
@@ -61,6 +62,45 @@ const jsonLd = {
   mainEntityOfPage: articleUrl,
   keywords: d.tags.join(', '),
 };
+
+// GEO / 富结果增强：从标题/摘要派生书籍实体，补 Book + Review 结构化数据
+const bookMatch = d.title.match(/《(.+?)》/);
+const bookName = bookMatch ? bookMatch[1] : '';
+const bookAuthor = (d.description.split('《')[0] || '')
+  .replace(/的$/, '')
+  .trim();
+const genreTags = d.tags.filter((t: string) => !['开卷八分钟', '读书'].includes(t));
+const bookLd = bookName
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'Book',
+      name: bookName,
+      inLanguage: 'zh-CN',
+      author: bookAuthor ? { '@type': 'Person', name: bookAuthor } : undefined,
+      about: genreTags,
+      publisher: { '@type': 'Organization', name: SITE.title },
+    }
+  : null;
+const reviewLd = bookName
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'Review',
+      name: d.title,
+      reviewBody: d.description,
+      datePublished: d.pubDate.toISOString(),
+      author: { '@type': 'Organization', name: d.author },
+      publisher: { '@type': 'Organization', name: SITE.title },
+      itemReviewed: {
+        '@type': 'Book',
+        name: bookName,
+        author: bookAuthor ? { '@type': 'Person', name: bookAuthor } : undefined,
+      },
+    }
+  : null;
+const jsonLdAll = [jsonLd, bookLd, reviewLd].filter(Boolean) as Record<
+  string,
+  unknown
+>[];
 ---
 
 <BaseLayout
@@ -68,7 +108,8 @@ const jsonLd = {
   description={d.description}
   ogType="article"
   pubDate={d.pubDate}
-  jsonLd={jsonLd}
+  ogImage={d.cover}
+  jsonLd={jsonLdAll}
 >
   <div
     class="lg:grid lg:grid-cols-[minmax(0,1fr)_240px] lg:gap-8 lg:items-start"
@@ -175,6 +216,12 @@ const jsonLd = {
           </nav>
         )
       }
+
+      <RelatedPosts
+        slug={d.slug}
+        collection={entry.collection}
+        tags={d.tags}
+      />
 
       <p class="text-sm text-gray-500 mt-6">
         <a

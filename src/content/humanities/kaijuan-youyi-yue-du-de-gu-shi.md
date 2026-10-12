@@ -10,6 +10,12 @@ draft: true
 
 > 本文整理自**梁文道《开卷八分钟》**音频听书专栏，本期书单为 **唐诺《阅读的故事》**。梁文道在《开卷八分钟》里用八分钟讲透一本书，本篇把音频核心内容写成图文，方便你通勤、睡前用耳朵重读经典，也可一键转存夸克网盘音频随时听。
 
+<div class="conclusion-box">
+  <div class="conclusion-box__head">📌 核心结论</div>
+  <p class="conclusion-text">唐诺的《阅读的故事》。梁文道同属“读书人”阵营，他谈这本书，像在谈自己的同行与对手，也谈阅读的挫败感。</p>
+  <p class="conclusion-meta">主讲：梁文道 · 整理：文学酒铺</p>
+</div>
+
 ## 📖 书籍信息
 
 | 项目 | 内容 |
@@ -49,3 +55,22 @@ draft: true
 ## 📥 试听与转存
 
 全套《开卷八分钟》音频正在整理分享中，本集的夸克网盘链接稍后补上，敬请期待。
+
+## ❓ 常见问题（FAQ）
+
+<div class="faq-item">
+  <div class="faq-q">Q1：《阅读的故事》主要讲什么？</div>
+  <div class="faq-a">台湾作家唐诺的读书随笔。他不教你“怎么读得快”，而是诚实坦白一个读书人的困境：买太多、读太慢、记不住、舍不得丢。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q2：梁文道为什么推荐《阅读的故事》？</div>
+  <div class="faq-a">梁文道说，唐诺写的是“阅读的挫败感”，而这恰恰最真实。我们都假装读了很多，唐诺却把“读不过来”这件事摊开来讲——这种坦诚，比任何读书方法论都珍贵。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q3：《阅读的故事》适合谁阅读？</div>
+  <div class="faq-a">家里书堆成山、又有点愧疚的人；想重建与阅读关系的人。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q4：《阅读的故事》是什么类型的书？</div>
+  <div class="faq-a">《阅读的故事》属于「随笔」类读物，可在文学酒铺按题材检索同类讲书。</div>
+</div>

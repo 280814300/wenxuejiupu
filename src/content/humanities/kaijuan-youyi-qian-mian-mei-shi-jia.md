@@ -10,6 +10,12 @@ draft: true
 
 > 本文整理自**梁文道《开卷八分钟》**音频听书专栏，本期书单为 **露丝·赖希尓《千面美食家》**。梁文道在《开卷八分钟》里用八分钟讲透一本书，本篇把音频核心内容写成图文，方便你通勤、睡前用耳朵重读经典，也可一键转存夸克网盘音频随时听。
 
+<div class="conclusion-box">
+  <div class="conclusion-box__head">📌 核心结论</div>
+  <p class="conclusion-text">露丝·赖希尓《千面美食家》。梁文道读它，是读食物背后的阶级与表演：我们吃什么、怎么吃，从来不只是口味。</p>
+  <p class="conclusion-meta">主讲：梁文道 · 整理：文学酒铺</p>
+</div>
+
 ## 📖 书籍信息
 
 | 项目 | 内容 |
@@ -52,3 +58,22 @@ draft: true
 本集完整音频已分享至夸克网盘，点下方链接即可**一键试听 / 转存**到你的夸克网盘，随时随地听梁文道讲书。
 
 - 夸克网盘（本集音频）：[露丝·赖希尓《千面美食家》 · 一键试听 / 转存](https://pan.quark.cn/s/231beaa548a0)
+
+## ❓ 常见问题（FAQ）
+
+<div class="faq-item">
+  <div class="faq-q">Q1：《千面美食家》主要讲什么？</div>
+  <div class="faq-a">露丝·赖希尓（Ruth Reichl）是《纽约时报》前美食评论员，这本回忆录写她如何在食物与身份之间游走——一个"伪装"成不同人去探店的评论员故事。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q2：梁文道为什么推荐《千面美食家》？</div>
+  <div class="faq-a">梁文道读它，是读食物背后的阶级与表演：我们吃什么、怎么吃，从来不只是口味。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q3：《千面美食家》适合谁阅读？</div>
+  <div class="faq-a">美食爱好者；喜欢饮食文化书写的人。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q4：《千面美食家》是什么类型的书？</div>
+  <div class="faq-a">《千面美食家》属于「随笔」类读物，可在文学酒铺按题材检索同类讲书。</div>
+</div>

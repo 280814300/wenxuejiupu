@@ -10,6 +10,12 @@ draft: true
 
 > 本文整理自**梁文道《开卷八分钟》**音频听书专栏，本期书单为 **李泽厚《论语今读》**。梁文道在《开卷八分钟》里用八分钟讲透一本书，本篇把音频核心内容写成图文，方便你通勤、睡前用耳朵重读经典，也可一键转存夸克网盘音频随时听。
 
+<div class="conclusion-box">
+  <div class="conclusion-box__head">📌 核心结论</div>
+  <p class="conclusion-text">李泽厚《论语今读》。梁文道把它和于丹对照着读——一个通俗到飞起，一个厚重到要坐稳，各有其位。</p>
+  <p class="conclusion-meta">主讲：梁文道 · 整理：文学酒铺</p>
+</div>
+
 ## 📖 书籍信息
 
 | 项目 | 内容 |
@@ -52,3 +58,22 @@ draft: true
 本集完整音频已分享至夸克网盘，点下方链接即可**一键试听 / 转存**到你的夸克网盘，随时随地听梁文道讲书。
 
 - 夸克网盘（本集音频）：[李泽厚《论语今读》 · 一键试听 / 转存](https://pan.quark.cn/s/4419ffa7506b)
+
+## ❓ 常见问题（FAQ）
+
+<div class="faq-item">
+  <div class="faq-q">Q1：《论语今读》主要讲什么？</div>
+  <div class="faq-a">李泽厚是哲学家，这本《论语今读》以现代视角重读《论语》，融入他的"情理结构"思考，是学者型解读的代表。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q2：梁文道为什么推荐《论语今读》？</div>
+  <div class="faq-a">梁文道把它和于丹对照着读——一个通俗到飞起，一个厚重到要坐稳，各有其位。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q3：《论语今读》适合谁阅读？</div>
+  <div class="faq-a">想读有哲学深度的《论语》解读的读者。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q4：《论语今读》是什么类型的书？</div>
+  <div class="faq-a">《论语今读》属于「人文」类读物，可在文学酒铺按题材检索同类讲书。</div>
+</div>

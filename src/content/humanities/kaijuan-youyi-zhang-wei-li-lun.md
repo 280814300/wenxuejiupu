@@ -10,6 +10,12 @@ draft: true
 
 > 本文整理自**梁文道《开卷八分钟》**音频听书专栏，本期书单为 **克里斯·安德森《长尾理论》**。梁文道在《开卷八分钟》里用八分钟讲透一本书，本篇把音频核心内容写成图文，方便你通勤、睡前用耳朵重读经典，也可一键转存夸克网盘音频随时听。
 
+<div class="conclusion-box">
+  <div class="conclusion-box__head">📌 核心结论</div>
+  <p class="conclusion-text">克里斯·安德森《长尾理论》。梁文道谈它，是谈一种改变商业世界观的模型——从热门到利基的迁移。</p>
+  <p class="conclusion-meta">主讲：梁文道 · 整理：文学酒铺</p>
+</div>
+
 ## 📖 书籍信息
 
 | 项目 | 内容 |
@@ -51,3 +57,22 @@ draft: true
 本集完整音频已分享至夸克网盘，点下方链接即可**一键试听 / 转存**到你的夸克网盘，随时随地听梁文道讲书。
 
 - 夸克网盘（本集音频）：[克里斯·安德森《长尾理论》 · 一键试听 / 转存](https://pan.quark.cn/s/61219846aab9)
+
+## ❓ 常见问题（FAQ）
+
+<div class="faq-item">
+  <div class="faq-q">Q1：《长尾理论》主要讲什么？</div>
+  <div class="faq-a">克里斯·安德森提出"长尾"：互联网让海量小众商品也能聚成可观市场，货架无限宽，冷门也能活。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q2：梁文道为什么推荐《长尾理论》？</div>
+  <div class="faq-a">梁文道谈它，是谈一种改变商业世界观的模型——从"hits（热门）"到"niches（利基）"的迁移。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q3：《长尾理论》适合谁阅读？</div>
+  <div class="faq-a">做内容、做小生意、关心数字经济的读者。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q4：《长尾理论》是什么类型的书？</div>
+  <div class="faq-a">《长尾理论》属于「财经」类读物，可在文学酒铺按题材检索同类讲书。</div>
+</div>

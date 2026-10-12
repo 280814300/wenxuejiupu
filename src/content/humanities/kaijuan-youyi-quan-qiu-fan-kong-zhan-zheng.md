@@ -10,6 +10,12 @@ draft: false
 
 > 本文整理自**梁文道《开卷八分钟》**音频听书专栏，本期书单为 **張錫模《全球反恐战争》**。梁文道在《开卷八分钟》里用八分钟讲透一本书，本篇把音频核心内容写成图文，方便你通勤、睡前用耳朵重读经典，也可一键转存夸克网盘音频随时听。
 
+<div class="conclusion-box">
+  <div class="conclusion-box__head">📌 核心结论</div>
+  <p class="conclusion-text">張錫模《全球反恐战争》。梁文道看重它提供的非西方视角——不是站队，而是理解恐怖主义与反恐话语如何被建构。</p>
+  <p class="conclusion-meta">主讲：梁文道 · 整理：文学酒铺</p>
+</div>
+
 ## 📖 书籍信息
 
 | 项目 | 内容 |
@@ -52,3 +58,22 @@ draft: false
 本集完整音频已分享至夸克网盘，点下方链接即可**一键试听 / 转存**到你的夸克网盘，随时随地听梁文道讲书。
 
 - 夸克网盘（本集音频）：[張錫模《全球反恐战争》 · 一键试听 / 转存](https://pan.quark.cn/s/2cc76ae6bbe1)
+
+## ❓ 常见问题（FAQ）
+
+<div class="faq-item">
+  <div class="faq-q">Q1：《全球反恐战争》主要讲什么？</div>
+  <div class="faq-a">张锡模是台湾国际关系学者，这本书梳理 9·11 之后的全球反恐格局，把"反恐战争"放回地缘政治与历史的脉络里看，而非单纯的善恶叙事。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q2：梁文道为什么推荐《全球反恐战争》？</div>
+  <div class="faq-a">梁文道看重它提供的"非西方视角"——不是站队，而是理解恐怖主义与反恐话语是怎么被建构出来的。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q3：《全球反恐战争》适合谁阅读？</div>
+  <div class="faq-a">关心国际政治、想超越新闻标题的读者。</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q">Q4：《全球反恐战争》是什么类型的书？</div>
+  <div class="faq-a">《全球反恐战争》属于「时政」类读物，可在文学酒铺按题材检索同类讲书。</div>
+</div>
