@@ -8,7 +8,7 @@ repo: https://github.com/logseq/logseq
 license: AGPL-3.0
 platforms: ["Windows", "macOS", "Linux", "Android", "iOS", "Web"]
 author: 文学酒铺
-draft: false
+draft: true
 ---
 
 ## 简介

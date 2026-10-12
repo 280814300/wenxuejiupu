@@ -10,12 +10,6 @@ draft: false
 
 > 本文整理自**梁文道《开卷八分钟》**音频听书专栏，本期书单为 **卢克·桑特《No Smoking》**。梁文道在《开卷八分钟》里用八分钟讲透一本书，本篇把音频核心内容写成图文，方便你通勤、睡前用耳朵重读经典，也可一键转存夸克网盘音频随时听。
 
-<div class="conclusion-box">
-  <div class="conclusion-box__head">📌 核心结论</div>
-  <p class="conclusion-text">卢克·桑特《No Smoking》。梁文道读它，是读一种在地的冷眼——不抒情，却比抒情更动人。</p>
-  <p class="conclusion-meta">主讲：梁文道 · 整理：文学酒铺</p>
-</div>
-
 ## 📖 书籍信息
 
 | 项目 | 内容 |

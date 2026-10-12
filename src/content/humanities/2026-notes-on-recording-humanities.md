@@ -5,7 +5,7 @@ slug: notes-on-recording-humanities-2026
 pubDate: 2026-04-12
 tags: ["随笔", "人文", "写作"]
 author: 文学酒铺
-draft: false
+draft: true
 ---
 
 做技术分享久了，很容易把"有用"当成唯一标准：这篇能帮人装好软件吗？那个能讲清怎么落地吗？这当然没错，但总觉得还缺了一块。

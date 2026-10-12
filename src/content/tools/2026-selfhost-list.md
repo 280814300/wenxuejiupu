@@ -6,7 +6,7 @@ pubDate: 2026-04-28
 tags: ["清单", "自托管", "隐私"]
 summary: 网盘 / 笔记 / 密码 / 相册 自托管方案
 author: 文学酒铺
-draft: false
+draft: true
 ---
 
 ## 网盘

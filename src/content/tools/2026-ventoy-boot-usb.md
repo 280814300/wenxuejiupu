@@ -8,7 +8,7 @@ repo: https://github.com/ventoy/Ventoy
 license: GPL-3.0
 platforms: ["Windows", "Linux", "macOS"]
 author: 文学酒铺
-draft: false
+draft: true
 ---
 
 ## 痛点

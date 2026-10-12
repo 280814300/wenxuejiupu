@@ -9,7 +9,7 @@ panUrl: https://pan.baidu.com/s/example-fonts
 extractCode: ft26
 size: 3.2GB
 author: 文学酒铺
-draft: false
+draft: true
 ---
 
 ## 资源说明

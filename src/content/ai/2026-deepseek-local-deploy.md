@@ -7,7 +7,7 @@ tags: ["AI", "DeepSeek", "本地部署"]
 level: 进阶
 software: DeepSeek
 author: 文学酒铺
-draft: false
+draft: true
 ---
 
 ## 为什么本地跑

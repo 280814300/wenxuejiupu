@@ -7,7 +7,7 @@ tags: ["AI", "Claude", "教程"]
 level: 入门
 software: Claude
 author: 文学酒铺
-draft: false
+draft: true
 ---
 
 ## 为什么写这篇

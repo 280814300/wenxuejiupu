@@ -7,7 +7,7 @@ tags: ["AI", "入门", "科普"]
 level: 入门
 software: 通用
 author: 文学酒铺
-draft: false
+draft: true
 ---
 
 ## 什么是对话式大模型

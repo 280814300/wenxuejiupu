@@ -8,7 +8,7 @@ repo: https://github.com/obsidianmd/obsidian-releases
 license: 个人免费（闭源商业软件）
 platforms: ["Windows", "macOS", "Linux", "Android", "iOS"]
 author: 文学酒铺
-draft: false
+draft: true
 ---
 
 ## 简介

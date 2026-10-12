@@ -9,7 +9,7 @@ panUrl: https://pan.baidu.com/s/example-ubuntu
 extractCode: ub22
 size: 12GB
 author: 文学酒铺
-draft: false
+draft: true
 ---
 
 ## 资源说明
