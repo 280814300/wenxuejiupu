@@ -51,13 +51,3 @@ draft: true
 本集完整音频已分享至夸克网盘，点下方链接即可**一键试听 / 转存**到你的夸克网盘，随时随地听梁文道讲书。
 
 - 夸克网盘（本集音频）：[苏童《碧奴》 · 一键试听 / 转存](https://pan.quark.cn/s/eeb17ca01f51)
-
-
----
-
-## 开卷八分钟 · 上一篇 / 下一篇
-
-- 上一篇：[《长尾理论》](/humanities/kaijuan-youyi-zhang-wei-li-lun/)  ·  2007-01-30
-- 下一篇：[《沉默的大多数》](/humanities/kaijuan-youyi-chen-mo-de-da-duo-shu/)  ·  2007-05-11
-
-<p class="note-text">《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。</p>

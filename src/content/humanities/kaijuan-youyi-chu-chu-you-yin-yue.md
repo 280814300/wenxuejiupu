@@ -57,13 +57,3 @@ draft: true
 本集完整音频已分享至夸克网盘，点下方链接即可**一键试听 / 转存**到你的夸克网盘，随时随地听梁文道讲书。
 
 - 夸克网盘（本集音频）：[辛丰年《处处有音乐》 · 一键试听 / 转存](https://pan.quark.cn/s/6f2f40f63f2b)
-
-
----
-
-## 开卷八分钟 · 上一篇 / 下一篇
-
-- 上一篇：[《与生命相约》](/humanities/kaijuan-youyi-yu-sheng-ming-xiang-yue/)  ·  2007-01-18
-- 下一篇：[《论语译注》](/humanities/kaijuan-youyi-lun-yu-yi-zhu/)  ·  2007-01-22
-
-<p class="note-text">《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。</p>

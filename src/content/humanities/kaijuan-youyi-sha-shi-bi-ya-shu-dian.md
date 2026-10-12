@@ -49,13 +49,3 @@ draft: true
 ## 📥 试听与转存
 
 全套《开卷八分钟》音频正在整理分享中，本集的夸克网盘链接稍后补上，敬请期待。
-
-
----
-
-## 开卷八分钟 · 上一篇 / 下一篇
-
-- 上一篇：[《明朝那些事儿》](/humanities/kaijuan-youyi-ming-chao-na-xie-shi-er/)  ·  2008-08-22
-- 下一篇：[《红楼梦》](/humanities/kaijuan-youyi-hong-lou-meng/)  ·  2008-12-05
-
-<p class="note-text">《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。</p>

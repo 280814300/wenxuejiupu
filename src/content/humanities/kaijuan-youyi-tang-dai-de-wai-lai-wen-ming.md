@@ -52,13 +52,3 @@ draft: false
 本集完整音频已分享至夸克网盘，点下方链接即可**一键试听 / 转存**到你的夸克网盘，随时随地听梁文道讲书。
 
 - 夸克网盘（本集音频）：[薛爱华《唐代的外来文明》 · 一键试听 / 转存](https://pan.quark.cn/s/ca68cebbbccc)
-
-
----
-
-## 开卷八分钟 · 上一篇 / 下一篇
-
-- 上一篇：[《全球反恐战争》](/humanities/kaijuan-youyi-quan-qiu-fan-kong-zhan-zheng/)  ·  2007-01-02
-- 下一篇：[《大崩坏》](/humanities/kaijuan-youyi-da-beng-huai/)  ·  2007-01-04
-
-<p class="note-text">《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。</p>

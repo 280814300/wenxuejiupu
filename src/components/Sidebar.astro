@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import { COLUMNS } from '../consts';
+import Icon from './Icon.astro';
 
 interface Props {
   // 文章目录（来自 render() 的 headings，h2/h3）
@@ -51,8 +52,9 @@ const recentTop = recent.slice(0, 6);
           <li>
             <a
               href={`/${c}/`}
-              class="no-underline text-inherit hover:text-brand"
+              class="no-underline text-inherit hover:text-brand flex items-center gap-1.5"
             >
+              <Icon name={c} class="w-4 h-4 shrink-0" />
               {COLUMNS[c].name}
             </a>
           </li>

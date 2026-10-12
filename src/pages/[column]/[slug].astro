@@ -30,10 +30,16 @@ const d = entry.data;
 const colKey = entry.collection as keyof typeof COLUMNS;
 const colName = COLUMNS[colKey].name;
 
-// 同栏目内按发布时间倒序，取上一篇（较新）/ 下一篇（较旧）
+// 同栏目内排序：开卷八分钟系列按节目播出日期（从 slug 解析 YYYYMMDD），其余按发布时间；
+// 升序后 上一篇=较早一篇、下一篇=较晚一篇，保证系列按集顺序前后跳转。
+function orderTs(e: any): number {
+  const m = e.data.slug.match(/kaijuan-youyi-(\d{2})(\d{2})(\d{2})/);
+  if (m) return new Date(2000 + +m[1], +m[2] - 1, +m[3]).getTime();
+  return e.data.pubDate.getTime();
+}
 const siblings = (await getCollection(entry.collection))
   .filter((e) => !e.data.draft)
-  .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+  .sort((a, b) => orderTs(a) - orderTs(b));
 const idx = siblings.findIndex((e) => e.data.slug === d.slug);
 const prevPost = idx > 0 ? siblings[idx - 1] : null;
 const nextPost = idx < siblings.length - 1 ? siblings[idx + 1] : null;

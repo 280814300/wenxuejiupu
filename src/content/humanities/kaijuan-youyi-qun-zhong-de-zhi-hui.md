@@ -52,13 +52,3 @@ draft: true
 本集完整音频已分享至夸克网盘，点下方链接即可**一键试听 / 转存**到你的夸克网盘，随时随地听梁文道讲书。
 
 - 夸克网盘（本集音频）：[詹姆斯·索罗维基《群众的智慧》 · 一键试听 / 转存](https://pan.quark.cn/s/dfd84bc902d4)
-
-
----
-
-## 开卷八分钟 · 上一篇 / 下一篇
-
-- 上一篇：[《No Smoking》](/humanities/kaijuan-youyi-no-smoking/)  ·  2007-01-05
-- 下一篇：[《今日的伊斯兰》](/humanities/kaijuan-youyi-jin-ri-de-yi-si-lan/)  ·  2007-01-09
-
-<p class="note-text">《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。</p>
