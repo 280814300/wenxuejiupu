@@ -27,15 +27,26 @@ draft: true
 《明朝那些事儿》适合谁阅读
 
 被正史劝退、想先“听个热闹”的人；写作者（学怎么把干货讲得不困）。
-## 📜 书中摘录
 
-> “成功只有一个——按照自己的方式，去度过人生。”
-> “所谓百年功名、千秋霸业、万古流芳，与一件事情相比，其实算不了什么。这件事情就是：用你喜欢的方式度过一生。”
-> “天下英雄如过江之鲫，那些人中龙凤尚且举步维艰，我等鱼目岂能奢望一生顺遂。”
+<div class="excerpt-box">
+  <div class="excerpt-box__head">📜 书中摘录</div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“成功只有一个——按照自己的方式，去度过人生。”</p>
+    <p class="excerpt-src">—— 出自明朝那些事儿</p>
+  </div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“所谓百年功名、千秋霸业、万古流芳，与一件事情相比，其实算不了什么。这件事情就是：用你喜欢的方式度过一生。”</p>
+    <p class="excerpt-src">—— 出自明朝那些事儿</p>
+  </div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“天下英雄如过江之鲫，那些人中龙凤尚且举步维艰，我等鱼目岂能奢望一生顺遂。”</p>
+    <p class="excerpt-src">—— 出自明朝那些事儿</p>
+  </div>
+</div>
 
 ## 📥 试听与转存
 
-> 全套《开卷八分钟》音频正在整理分享中，本集的夸克网盘链接稍后补上，敬请期待。
+全套《开卷八分钟》音频正在整理分享中，本集的夸克网盘链接稍后补上，敬请期待。
 
 
 ---
@@ -45,4 +56,4 @@ draft: true
 - 上一篇：[《走到人生边上》](/humanities/kaijuan-youyi-zou-dao-ren-sheng-bian-shang/)  ·  2008-01-07
 - 下一篇：[《莎士比亚书店》](/humanities/kaijuan-youyi-sha-shi-bi-ya-shu-dian/)  ·  2008-10-15
 
-> 《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。
+<p class="note-text">《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。</p>

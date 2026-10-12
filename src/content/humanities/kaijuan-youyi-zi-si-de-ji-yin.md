@@ -27,15 +27,26 @@ draft: true
 《自私的基因》适合谁阅读
 
 喜欢被冒犯一下再恍然大悟的人；想理解演化心理学底层逻辑的人。
-## 📜 书中摘录
 
-> “我们都是生存机器——作为载运工具的机器人，其程序是盲目编制的，为的是永久保存所谓基因这种禀性自私的分子。”
-> “成功基因的一个突出特性就是其无情的自私性。”
-> “让我们努力去教导慷慨与利他，因为我们生而自私。”
+<div class="excerpt-box">
+  <div class="excerpt-box__head">📜 书中摘录</div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“我们都是生存机器——作为载运工具的机器人，其程序是盲目编制的，为的是永久保存所谓基因这种禀性自私的分子。”</p>
+    <p class="excerpt-src">—— 出自自私的基因</p>
+  </div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“成功基因的一个突出特性就是其无情的自私性。”</p>
+    <p class="excerpt-src">—— 出自自私的基因</p>
+  </div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“让我们努力去教导慷慨与利他，因为我们生而自私。”</p>
+    <p class="excerpt-src">—— 出自自私的基因</p>
+  </div>
+</div>
 
 ## 📥 试听与转存
 
-> 全套《开卷八分钟》音频正在整理分享中，本集的夸克网盘链接稍后补上，敬请期待。
+全套《开卷八分钟》音频正在整理分享中，本集的夸克网盘链接稍后补上，敬请期待。
 
 
 ---
@@ -45,4 +56,4 @@ draft: true
 - 上一篇：[《物种起源》](/humanities/kaijuan-youyi-wu-zhong-qi-yuan/)  ·  2007-12-24
 - 下一篇：[《走到人生边上》](/humanities/kaijuan-youyi-zou-dao-ren-sheng-bian-shang/)  ·  2008-01-07
 
-> 《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。
+<p class="note-text">《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。</p>

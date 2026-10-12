@@ -27,15 +27,26 @@ draft: true
 《优入圣域》适合谁阅读
 
 对制度史、礼制文化感兴趣的读者；喜欢"小题大做"式学问的人。
-## 📜 书中摘录
 
-> “在帝制中国，孔庙作为官方祭祀制度，恰是传统社会里政治与文化两股力量最耀眼的交点。”
-> “孔子以道设教，天下祀之，非祀其人，祀其教也，祀其道也。”
-> “书名“优入圣域”出自唐代韩愈《进学解》：“吐辞为经，举足为法，绝类离伦，优入圣域。”
+<div class="excerpt-box">
+  <div class="excerpt-box__head">📜 书中摘录</div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“在帝制中国，孔庙作为官方祭祀制度，恰是传统社会里政治与文化两股力量最耀眼的交点。”</p>
+    <p class="excerpt-src">—— 出自优入圣域</p>
+  </div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“孔子以道设教，天下祀之，非祀其人，祀其教也，祀其道也。”</p>
+    <p class="excerpt-src">—— 出自优入圣域</p>
+  </div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“书名“优入圣域”出自唐代韩愈《进学解》：“吐辞为经，举足为法，绝类离伦，优入圣域。”</p>
+    <p class="excerpt-src">—— 出自优入圣域</p>
+  </div>
+</div>
 
 ## 📥 试听与转存
 
-> 本集完整音频已分享至夸克网盘，点下方链接即可**一键试听 / 转存**到你的夸克网盘，随时随地听梁文道讲书。
+本集完整音频已分享至夸克网盘，点下方链接即可**一键试听 / 转存**到你的夸克网盘，随时随地听梁文道讲书。
 
 - 夸克网盘（本集音频）：[黃進興《优入圣域》 · 一键试听 / 转存](https://pan.quark.cn/s/e0acf1d75123)
 
@@ -47,4 +58,4 @@ draft: true
 - 上一篇：[《古代中国的思想世界》](/humanities/kaijuan-youyi-gu-dai-zhong-guo-de-si-xiang-shi-jie/)  ·  2007-01-25
 - 下一篇：[《失语者的呼声》](/humanities/kaijuan-youyi-shi-yu-zhe-de-hu-sheng/)  ·  2007-01-29
 
-> 《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。
+<p class="note-text">《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。</p>

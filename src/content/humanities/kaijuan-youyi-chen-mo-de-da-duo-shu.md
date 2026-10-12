@@ -34,15 +34,26 @@ draft: true
 《沉默的大多数》适合谁阅读
 
 厌倦了正确废话、想找回一点清醒幽默的人；写作初学者（学怎么把道理写得不累）。
-## 📜 书中摘录
 
-> “我活在世上，无非想要明白些道理，遇见些有趣的事。”
-> “在一个喧嚣的话语圈下面，始终有个沉默的大多数。”
-> “人只要争得了论是非的权力，他已经不战而胜了。”
+<div class="excerpt-box">
+  <div class="excerpt-box__head">📜 书中摘录</div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“我活在世上，无非想要明白些道理，遇见些有趣的事。”</p>
+    <p class="excerpt-src">—— 出自沉默的大多数</p>
+  </div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“在一个喧嚣的话语圈下面，始终有个沉默的大多数。”</p>
+    <p class="excerpt-src">—— 出自沉默的大多数</p>
+  </div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“人只要争得了论是非的权力，他已经不战而胜了。”</p>
+    <p class="excerpt-src">—— 出自沉默的大多数</p>
+  </div>
+</div>
 
 ## 📥 试听与转存
 
-> 全套《开卷八分钟》音频正在整理分享中，本集的夸克网盘链接稍后补上，敬请期待。
+全套《开卷八分钟》音频正在整理分享中，本集的夸克网盘链接稍后补上，敬请期待。
 
 
 ---
@@ -52,4 +63,4 @@ draft: true
 - 上一篇：[《碧奴》](/humanities/kaijuan-youyi-bi-nu/)  ·  2007-01-31
 - 下一篇：[《万历十五年》](/humanities/kaijuan-youyi-wan-li-shi-wu-nian/)  ·  2007-11-13
 
-> 《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。
+<p class="note-text">《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。</p>

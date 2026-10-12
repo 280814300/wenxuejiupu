@@ -27,15 +27,26 @@ draft: true
 《莎士比亚书店》适合谁阅读
 
 爱书店、爱巴黎、爱“文艺黄金时代”叙事的人；想理解独立书店精神源头的人。
-## 📜 书中摘录
 
-> “像任何一个货真价实的作家一样，海明威知道，要想写得好，就得花功夫。”
-> “作家之间的关系常常烽烟四起，但据我观察，战火往往会平息，只留下些污迹而已。”
-> “欧内斯特·沃尔许拥有一种非常美妙的东西，他一生活得那么充满生机，又是那么勇敢。”
+<div class="excerpt-box">
+  <div class="excerpt-box__head">📜 书中摘录</div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“像任何一个货真价实的作家一样，海明威知道，要想写得好，就得花功夫。”</p>
+    <p class="excerpt-src">—— 出自莎士比亚书店</p>
+  </div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“作家之间的关系常常烽烟四起，但据我观察，战火往往会平息，只留下些污迹而已。”</p>
+    <p class="excerpt-src">—— 出自莎士比亚书店</p>
+  </div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“欧内斯特·沃尔许拥有一种非常美妙的东西，他一生活得那么充满生机，又是那么勇敢。”</p>
+    <p class="excerpt-src">—— 出自莎士比亚书店</p>
+  </div>
+</div>
 
 ## 📥 试听与转存
 
-> 全套《开卷八分钟》音频正在整理分享中，本集的夸克网盘链接稍后补上，敬请期待。
+全套《开卷八分钟》音频正在整理分享中，本集的夸克网盘链接稍后补上，敬请期待。
 
 
 ---
@@ -45,4 +56,4 @@ draft: true
 - 上一篇：[《明朝那些事儿》](/humanities/kaijuan-youyi-ming-chao-na-xie-shi-er/)  ·  2008-08-22
 - 下一篇：[《红楼梦》](/humanities/kaijuan-youyi-hong-lou-meng/)  ·  2008-12-05
 
-> 《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。
+<p class="note-text">《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。</p>

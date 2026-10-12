@@ -27,15 +27,26 @@ draft: true
 《阅读的故事》适合谁阅读
 
 家里书堆成山、又有点愧疚的人；想重建与阅读关系的人。
-## 📜 书中摘录
 
-> “阅读之难，不在于开始，而在于持续。”
-> “旅行总是耗时而且昂贵的，而阅读便是最廉价最方便的旅行方式，是异质世界最有效的召唤魔术，是最快速把世界转变成家乡的方法。”
-> “下一本书，就藏在此时此刻你正念着的这本书里头。”
+<div class="excerpt-box">
+  <div class="excerpt-box__head">📜 书中摘录</div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“阅读之难，不在于开始，而在于持续。”</p>
+    <p class="excerpt-src">—— 出自阅读的故事</p>
+  </div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“旅行总是耗时而且昂贵的，而阅读便是最廉价最方便的旅行方式，是异质世界最有效的召唤魔术，是最快速把世界转变成家乡的方法。”</p>
+    <p class="excerpt-src">—— 出自阅读的故事</p>
+  </div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“下一本书，就藏在此时此刻你正念着的这本书里头。”</p>
+    <p class="excerpt-src">—— 出自阅读的故事</p>
+  </div>
+</div>
 
 ## 📥 试听与转存
 
-> 全套《开卷八分钟》音频正在整理分享中，本集的夸克网盘链接稍后补上，敬请期待。
+全套《开卷八分钟》音频正在整理分享中，本集的夸克网盘链接稍后补上，敬请期待。
 
 
 ---
@@ -45,4 +56,4 @@ draft: true
 - 上一篇：[《梁文道谈金庸武侠》](/humanities/kaijuan-youyi-jin-yong-wu-xia/)  ·  2007-11-23
 - 下一篇：[《霍乱时期的爱情》](/humanities/kaijuan-youyi-huo-luan-shi-qi-de-ai-qing/)  ·  2007-12-14
 
-> 《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。
+<p class="note-text">《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。</p>

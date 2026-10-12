@@ -257,6 +257,54 @@ body {
   box-shadow: 0 10px 30px -16px rgba(0, 0, 0, 0.4);
 }
 
+/* 书中摘录：卡片方块（风格同文章标题区：品牌色左边线 + 柔和卡片） */
+.excerpt-box {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-left: 4px solid var(--brand);
+  border-radius: 14px;
+  padding: 1rem 1.15rem;
+  margin: 1.3rem 0;
+  box-shadow: 0 4px 14px -6px rgba(0, 0, 0, 0.12);
+}
+.excerpt-box__head {
+  font-family: var(--font-mono);
+  font-size: 0.8em;
+  letter-spacing: 0.05em;
+  color: var(--text-soft);
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+}
+.excerpt-item {
+  margin: 0.85rem 0;
+}
+.excerpt-item:first-of-type {
+  margin-top: 0.1rem;
+}
+.excerpt-item:last-of-type {
+  margin-bottom: 0.1rem;
+}
+.excerpt-text {
+  margin: 0;
+  font-size: 1.04em;
+  line-height: 1.75;
+  color: var(--text);
+}
+.excerpt-src {
+  margin: 0.35rem 0 0;
+  font-size: 0.82em;
+  color: var(--text-soft);
+  text-align: right;
+}
+
+/* 普通说明文字（试听提示 / 系列注脚）：不用引用排版，仅作浅色小字 */
+.note-text {
+  font-size:0.88em;
+  color: var(--text-soft);
+  margin: 0.9rem 0 0;
+  line-height: 1.7;
+}
+
 /* ─────────────────────────────────────────────
    科技感增强
    ───────────────────────────────────────────── */

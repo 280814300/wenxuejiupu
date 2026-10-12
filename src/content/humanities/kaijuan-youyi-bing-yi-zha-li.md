@@ -29,15 +29,26 @@ draft: true
 《兵以诈立》适合谁阅读
 
 对《孙子兵法》、先秦思想感兴趣的人；反感成功学解读的人。
-## 📜 书中摘录
 
-> “《孙子》说“兵以诈立”，就一门心思研究诈术，不唱高调说要“忠信”吃饭。”
-> “只要还有战争，《孙子兵法》就没有过时。”
-> “兵法是中国的特产，谋略水平长时间高于同时期的西方。”
+<div class="excerpt-box">
+  <div class="excerpt-box__head">📜 书中摘录</div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“《孙子》说“兵以诈立”，就一门心思研究诈术，不唱高调说要“忠信”吃饭。”</p>
+    <p class="excerpt-src">—— 出自兵以诈立</p>
+  </div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“只要还有战争，《孙子兵法》就没有过时。”</p>
+    <p class="excerpt-src">—— 出自兵以诈立</p>
+  </div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“兵法是中国的特产，谋略水平长时间高于同时期的西方。”</p>
+    <p class="excerpt-src">—— 出自兵以诈立</p>
+  </div>
+</div>
 
 ## 📥 试听与转存
 
-> 本集完整音频已分享至夸克网盘，点下方链接即可**一键试听 / 转存**到你的夸克网盘，随时随地听梁文道讲书。
+本集完整音频已分享至夸克网盘，点下方链接即可**一键试听 / 转存**到你的夸克网盘，随时随地听梁文道讲书。
 
 - 夸克网盘（本集音频）：[李零《兵以诈立》 · 一键试听 / 转存](https://pan.quark.cn/s/538b73a12927)
 
@@ -49,4 +60,4 @@ draft: true
 - 上一篇：[《千面美食家》](/humanities/kaijuan-youyi-qian-mian-mei-shi-jia/)  ·  2007-01-10
 - 下一篇：[《动物必须刷牙吗？》](/humanities/kaijuan-youyi-dong-wu-bi-xu-shua-ya-ma/)  ·  2007-01-12
 
-> 《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。
+<p class="note-text">《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。</p>

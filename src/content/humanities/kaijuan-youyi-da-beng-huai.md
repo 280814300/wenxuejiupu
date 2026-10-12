@@ -29,15 +29,26 @@ draft: false
 《大崩坏》适合谁阅读
 
 关心环境、社会韧性的人；喜欢大历史叙事的读者。
-## 📜 书中摘录
 
-> “为什么有些社会得以繁荣延续，有些社会却走向衰亡。”
-> “没有一个社会的崩溃可以完全归咎于环境变化，多少有其它因素的作用。”
-> “对于任何一个社会而言，成败的关键在于知道哪些核心价值观应该继续尊崇，而哪些随着时代的变化应该摒弃并寻找新的价值观。”
+<div class="excerpt-box">
+  <div class="excerpt-box__head">📜 书中摘录</div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“为什么有些社会得以繁荣延续，有些社会却走向衰亡。”</p>
+    <p class="excerpt-src">—— 出自大崩坏</p>
+  </div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“没有一个社会的崩溃可以完全归咎于环境变化，多少有其它因素的作用。”</p>
+    <p class="excerpt-src">—— 出自大崩坏</p>
+  </div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“对于任何一个社会而言，成败的关键在于知道哪些核心价值观应该继续尊崇，而哪些随着时代的变化应该摒弃并寻找新的价值观。”</p>
+    <p class="excerpt-src">—— 出自大崩坏</p>
+  </div>
+</div>
 
 ## 📥 试听与转存
 
-> 本集完整音频已分享至夸克网盘，点下方链接即可**一键试听 / 转存**到你的夸克网盘，随时随地听梁文道讲书。
+本集完整音频已分享至夸克网盘，点下方链接即可**一键试听 / 转存**到你的夸克网盘，随时随地听梁文道讲书。
 
 - 夸克网盘（本集音频）：[贾雷德·戴蒙德《大崩坏》 · 一键试听 / 转存](https://pan.quark.cn/s/dc13ba2aebff)
 
@@ -49,4 +60,4 @@ draft: false
 - 上一篇：[《唐代的外来文明》](/humanities/kaijuan-youyi-tang-dai-de-wai-lai-wen-ming/)  ·  2007-01-03
 - 下一篇：[《No Smoking》](/humanities/kaijuan-youyi-no-smoking/)  ·  2007-01-05
 
-> 《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。
+<p class="note-text">《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。</p>

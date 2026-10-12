@@ -29,15 +29,26 @@ draft: false
 《书读完了》适合谁阅读
 
 书单焦虑者；想建立个人知识主干的人。
-## 📜 书中摘录
 
-> “中国古书不过是那几十种，是读得完的。”
-> “不会读，书如干草。会读，书如甘草，现代化说法是如同口香糖，越嚼越有滋味。”
-> “读书之经验只有三个字：少、懒、忘。”
+<div class="excerpt-box">
+  <div class="excerpt-box__head">📜 书中摘录</div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“中国古书不过是那几十种，是读得完的。”</p>
+    <p class="excerpt-src">—— 出自书读完了</p>
+  </div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“不会读，书如干草。会读，书如甘草，现代化说法是如同口香糖，越嚼越有滋味。”</p>
+    <p class="excerpt-src">—— 出自书读完了</p>
+  </div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“读书之经验只有三个字：少、懒、忘。”</p>
+    <p class="excerpt-src">—— 出自书读完了</p>
+  </div>
+</div>
 
 ## 📥 试听与转存
 
-> 本集完整音频已分享至夸克网盘，点下方链接即可**一键试听 / 转存**到你的夸克网盘，随时随地听梁文道讲书。
+本集完整音频已分享至夸克网盘，点下方链接即可**一键试听 / 转存**到你的夸克网盘，随时随地听梁文道讲书。
 
 - 夸克网盘（本集音频）：[金克木《书读完了》 · 一键试听 / 转存](https://pan.quark.cn/s/0bc0e504df2e)
 
@@ -49,4 +60,4 @@ draft: false
 - 上一篇：已是本系列第一篇
 - 下一篇：[《全球反恐战争》](/humanities/kaijuan-youyi-quan-qiu-fan-kong-zhan-zheng/)  ·  2007-01-02
 
-> 《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。
+<p class="note-text">《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。</p>

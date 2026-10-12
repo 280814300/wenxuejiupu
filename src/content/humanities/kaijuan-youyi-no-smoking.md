@@ -29,15 +29,26 @@ draft: false
 《No Smoking》适合谁阅读
 
 城市观察者；喜欢非虚构随笔的人。
-## 📜 书中摘录
 
-> “我们也许都已经不再抽烟了，但我们仍在燃烧。”
-> “想象一下，奥黛丽·赫本征服纽约时却不叼着一支烟（或那根荒谬的长烟嘴）。”
-> “《No Smoking》是对二十世纪的一曲献礼——这个世纪创造了香烟、推销了香烟、神化了香烟，然后又突然向它宣战。”
+<div class="excerpt-box">
+  <div class="excerpt-box__head">📜 书中摘录</div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“我们也许都已经不再抽烟了，但我们仍在燃烧。”</p>
+    <p class="excerpt-src">—— 出自No Smoking</p>
+  </div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“想象一下，奥黛丽·赫本征服纽约时却不叼着一支烟（或那根荒谬的长烟嘴）。”</p>
+    <p class="excerpt-src">—— 出自No Smoking</p>
+  </div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“《No Smoking》是对二十世纪的一曲献礼——这个世纪创造了香烟、推销了香烟、神化了香烟，然后又突然向它宣战。”</p>
+    <p class="excerpt-src">—— 出自No Smoking</p>
+  </div>
+</div>
 
 ## 📥 试听与转存
 
-> 本集完整音频已分享至夸克网盘，点下方链接即可**一键试听 / 转存**到你的夸克网盘，随时随地听梁文道讲书。
+本集完整音频已分享至夸克网盘，点下方链接即可**一键试听 / 转存**到你的夸克网盘，随时随地听梁文道讲书。
 
 - 夸克网盘（本集音频）：[卢克·桑特《No Smoking》 · 一键试听 / 转存](https://pan.quark.cn/s/f50d05522259)
 
@@ -49,4 +60,4 @@ draft: false
 - 上一篇：[《大崩坏》](/humanities/kaijuan-youyi-da-beng-huai/)  ·  2007-01-04
 - 下一篇：[《群众的智慧》](/humanities/kaijuan-youyi-qun-zhong-de-zhi-hui/)  ·  2007-01-08
 
-> 《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。
+<p class="note-text">《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。</p>

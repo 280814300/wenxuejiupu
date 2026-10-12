@@ -29,15 +29,26 @@ draft: true
 《论语译注》适合谁阅读
 
 想认真读《论语》原文的人；被各种"心得"搞晕的读者。
-## 📜 书中摘录
 
-> “学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知而不愠，不亦君子乎？”
-> “吾日三省吾身：为人谋而不忠乎？与朋友交而不信乎？传不习乎？”
-> “己所不欲，勿施于人。”
+<div class="excerpt-box">
+  <div class="excerpt-box__head">📜 书中摘录</div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知而不愠，不亦君子乎？”</p>
+    <p class="excerpt-src">—— 出自论语译注</p>
+  </div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“吾日三省吾身：为人谋而不忠乎？与朋友交而不信乎？传不习乎？”</p>
+    <p class="excerpt-src">—— 出自论语译注</p>
+  </div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“己所不欲，勿施于人。”</p>
+    <p class="excerpt-src">—— 出自论语译注</p>
+  </div>
+</div>
 
 ## 📥 试听与转存
 
-> 本集完整音频已分享至夸克网盘，点下方链接即可**一键试听 / 转存**到你的夸克网盘，随时随地听梁文道讲书。
+本集完整音频已分享至夸克网盘，点下方链接即可**一键试听 / 转存**到你的夸克网盘，随时随地听梁文道讲书。
 
 - 夸克网盘（本集音频）：[杨伯峻《论语译注》 · 一键试听 / 转存](https://pan.quark.cn/s/06963abe7144)
 
@@ -49,4 +60,4 @@ draft: true
 - 上一篇：[《处处有音乐》](/humanities/kaijuan-youyi-chu-chu-you-yin-yue/)  ·  2007-01-19
 - 下一篇：[《论语》心得》](/humanities/kaijuan-youyi-lun-yu-xin-de/)  ·  2007-01-23
 
-> 《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。
+<p class="note-text">《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。</p>

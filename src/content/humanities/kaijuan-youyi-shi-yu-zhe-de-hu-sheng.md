@@ -27,15 +27,26 @@ draft: true
 《失语者的呼声》适合谁阅读
 
 关心劳工、社会公平议题的读者；想理解真实中国的人。
-## 📜 书中摘录
 
-> “城市的繁荣离不开打工妹辛勤的汗水，因此，就不该让她们再付出辛酸的泪水！”
-> “我无法站在高处看别人的痛苦。”
-> “工人们一直处在失语的境地，尽管他们要的不多，但他们的声音很少有人听到。”
+<div class="excerpt-box">
+  <div class="excerpt-box__head">📜 书中摘录</div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“城市的繁荣离不开打工妹辛勤的汗水，因此，就不该让她们再付出辛酸的泪水！”</p>
+    <p class="excerpt-src">—— 出自失语者的呼声</p>
+  </div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“我无法站在高处看别人的痛苦。”</p>
+    <p class="excerpt-src">—— 出自失语者的呼声</p>
+  </div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“工人们一直处在失语的境地，尽管他们要的不多，但他们的声音很少有人听到。”</p>
+    <p class="excerpt-src">—— 出自失语者的呼声</p>
+  </div>
+</div>
 
 ## 📥 试听与转存
 
-> 本集完整音频已分享至夸克网盘，点下方链接即可**一键试听 / 转存**到你的夸克网盘，随时随地听梁文道讲书。
+本集完整音频已分享至夸克网盘，点下方链接即可**一键试听 / 转存**到你的夸克网盘，随时随地听梁文道讲书。
 
 - 夸克网盘（本集音频）：[黎婉薇、潘毅《失语者的呼声》 · 一键试听 / 转存](https://pan.quark.cn/s/957cb5c3b1e2)
 
@@ -47,4 +58,4 @@ draft: true
 - 上一篇：[《优入圣域》](/humanities/kaijuan-youyi-you-ru-sheng-yu/)  ·  2007-01-26
 - 下一篇：[《长尾理论》](/humanities/kaijuan-youyi-zhang-wei-li-lun/)  ·  2007-01-30
 
-> 《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。
+<p class="note-text">《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。</p>

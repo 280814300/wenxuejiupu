@@ -32,15 +32,26 @@ draft: true
 《百年孤独》适合谁阅读
 
 想挑战一部“大名著”的人；对拉美历史与叙事实验有兴趣的读者。
-## 📜 书中摘录
 
-> “多年以后，面对行刑队，奥雷里亚诺·布恩迪亚上校将会回想起父亲带他去见识冰块的那个遥远的下午。”
-> “家族中的第一个人被捆在树上，最后一个人正被蚂蚁吃掉。”
-> “注定经受百年孤独的家族不会有第二次机会出现在大地上。”
+<div class="excerpt-box">
+  <div class="excerpt-box__head">📜 书中摘录</div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“多年以后，面对行刑队，奥雷里亚诺·布恩迪亚上校将会回想起父亲带他去见识冰块的那个遥远的下午。”</p>
+    <p class="excerpt-src">—— 出自百年孤独</p>
+  </div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“家族中的第一个人被捆在树上，最后一个人正被蚂蚁吃掉。”</p>
+    <p class="excerpt-src">—— 出自百年孤独</p>
+  </div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“注定经受百年孤独的家族不会有第二次机会出现在大地上。”</p>
+    <p class="excerpt-src">—— 出自百年孤独</p>
+  </div>
+</div>
 
 ## 📥 试听与转存
 
-> 全套《开卷八分钟》音频正在整理分享中，本集的夸克网盘链接稍后补上，敬请期待。
+全套《开卷八分钟》音频正在整理分享中，本集的夸克网盘链接稍后补上，敬请期待。
 
 
 ---
@@ -50,4 +61,4 @@ draft: true
 - 上一篇：[《十个词汇里的中国》](/humanities/kaijuan-youyi-shi-ge-ci-hui-li-de-zhong-guo/)  ·  2011-02-18
 - 下一篇：[《三体》](/humanities/kaijuan-youyi-san-ti/)  ·  2011-07-08
 
-> 《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。
+<p class="note-text">《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。</p>

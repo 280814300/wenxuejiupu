@@ -29,15 +29,26 @@ draft: true
 《千面美食家》适合谁阅读
 
 美食爱好者；喜欢饮食文化书写的人。
-## 📜 书中摘录
 
-> “Pull up a chair. Take a taste. Come join us. Life is so endlessly delicious.”
-> “对我来说，烹饪是一种取悦他人、告诉他人我爱他们的方式。”
-> “我离不开黄油。黄油大概是我最偏爱的一种食物。”
+<div class="excerpt-box">
+  <div class="excerpt-box__head">📜 书中摘录</div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“Pull up a chair. Take a taste. Come join us. Life is so endlessly delicious.”</p>
+    <p class="excerpt-src">—— 出自千面美食家</p>
+  </div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“对我来说，烹饪是一种取悦他人、告诉他人我爱他们的方式。”</p>
+    <p class="excerpt-src">—— 出自千面美食家</p>
+  </div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“我离不开黄油。黄油大概是我最偏爱的一种食物。”</p>
+    <p class="excerpt-src">—— 出自千面美食家</p>
+  </div>
+</div>
 
 ## 📥 试听与转存
 
-> 本集完整音频已分享至夸克网盘，点下方链接即可**一键试听 / 转存**到你的夸克网盘，随时随地听梁文道讲书。
+本集完整音频已分享至夸克网盘，点下方链接即可**一键试听 / 转存**到你的夸克网盘，随时随地听梁文道讲书。
 
 - 夸克网盘（本集音频）：[露丝·赖希尓《千面美食家》 · 一键试听 / 转存](https://pan.quark.cn/s/231beaa548a0)
 
@@ -49,4 +60,4 @@ draft: true
 - 上一篇：[《今日的伊斯兰》](/humanities/kaijuan-youyi-jin-ri-de-yi-si-lan/)  ·  2007-01-09
 - 下一篇：[《兵以诈立》](/humanities/kaijuan-youyi-bing-yi-zha-li/)  ·  2007-01-11
 
-> 《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。
+<p class="note-text">《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。</p>

@@ -27,15 +27,26 @@ draft: true
 《霍乱时期的爱情》适合谁阅读
 
 相信爱情也害怕爱情的人；想看大师如何处理“老去”这个主题的人。
-## 📜 书中摘录
 
-> “我对死亡感到唯一的痛苦，是没能为爱而死。”
-> “任何年龄的爱情都是合情合理的。”
-> “原来是生命，而非死亡，才是没有止境的。”
+<div class="excerpt-box">
+  <div class="excerpt-box__head">📜 书中摘录</div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“我对死亡感到唯一的痛苦，是没能为爱而死。”</p>
+    <p class="excerpt-src">—— 出自霍乱时期的爱情</p>
+  </div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“任何年龄的爱情都是合情合理的。”</p>
+    <p class="excerpt-src">—— 出自霍乱时期的爱情</p>
+  </div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“原来是生命，而非死亡，才是没有止境的。”</p>
+    <p class="excerpt-src">—— 出自霍乱时期的爱情</p>
+  </div>
+</div>
 
 ## 📥 试听与转存
 
-> 全套《开卷八分钟》音频正在整理分享中，本集的夸克网盘链接稍后补上，敬请期待。
+全套《开卷八分钟》音频正在整理分享中，本集的夸克网盘链接稍后补上，敬请期待。
 
 
 ---
@@ -45,4 +56,4 @@ draft: true
 - 上一篇：[《阅读的故事》](/humanities/kaijuan-youyi-yue-du-de-gu-shi/)  ·  2007-11-29
 - 下一篇：[《货币战争》](/humanities/kaijuan-youyi-huo-bi-zhan-zheng/)  ·  2007-12-18
 
-> 《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。
+<p class="note-text">《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。</p>

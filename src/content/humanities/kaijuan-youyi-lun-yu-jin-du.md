@@ -29,15 +29,26 @@ draft: true
 《论语今读》适合谁阅读
 
 想读有哲学深度的《论语》解读的读者。
-## 📜 书中摘录
 
-> “与西方“罪感文化”、日本“耻感文化”相比较，以儒学为骨干的中国文化的精神是“乐感文化”。”
-> “读圣贤书，有何可学，修身立言，俯仰无怍。”
-> “孔子讲无争，后世儒者仍可以有不同意见，这应是儒学内部的宽容性：并非孔子讲的句句都是真理。”
+<div class="excerpt-box">
+  <div class="excerpt-box__head">📜 书中摘录</div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“与西方“罪感文化”、日本“耻感文化”相比较，以儒学为骨干的中国文化的精神是“乐感文化”。”</p>
+    <p class="excerpt-src">—— 出自论语今读</p>
+  </div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“读圣贤书，有何可学，修身立言，俯仰无怍。”</p>
+    <p class="excerpt-src">—— 出自论语今读</p>
+  </div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“孔子讲无争，后世儒者仍可以有不同意见，这应是儒学内部的宽容性：并非孔子讲的句句都是真理。”</p>
+    <p class="excerpt-src">—— 出自论语今读</p>
+  </div>
+</div>
 
 ## 📥 试听与转存
 
-> 本集完整音频已分享至夸克网盘，点下方链接即可**一键试听 / 转存**到你的夸克网盘，随时随地听梁文道讲书。
+本集完整音频已分享至夸克网盘，点下方链接即可**一键试听 / 转存**到你的夸克网盘，随时随地听梁文道讲书。
 
 - 夸克网盘（本集音频）：[李泽厚《论语今读》 · 一键试听 / 转存](https://pan.quark.cn/s/4419ffa7506b)
 
@@ -49,4 +60,4 @@ draft: true
 - 上一篇：[《论语》心得》](/humanities/kaijuan-youyi-lun-yu-xin-de/)  ·  2007-01-23
 - 下一篇：[《古代中国的思想世界》](/humanities/kaijuan-youyi-gu-dai-zhong-guo-de-si-xiang-shi-jie/)  ·  2007-01-25
 
-> 《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。
+<p class="note-text">《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。</p>

@@ -26,15 +26,26 @@ draft: true
 《金庸武侠》适合谁阅读
 
 从小看金庸、如今想读出点“门道”的人；对“中国人情社会”感兴趣的读者。
-## 📜 书中摘录
 
-> “侠之大者，为国为民。”
-> “飞雪连天射白鹿，笑书神侠倚碧鸳。”
-> “情深不寿，强极则辱；谦谦君子，温润如玉。”
+<div class="excerpt-box">
+  <div class="excerpt-box__head">📜 书中摘录</div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“侠之大者，为国为民。”</p>
+    <p class="excerpt-src">—— 出自金庸武侠</p>
+  </div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“飞雪连天射白鹿，笑书神侠倚碧鸳。”</p>
+    <p class="excerpt-src">—— 出自金庸武侠</p>
+  </div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“情深不寿，强极则辱；谦谦君子，温润如玉。”</p>
+    <p class="excerpt-src">—— 出自金庸武侠</p>
+  </div>
+</div>
 
 ## 📥 试听与转存
 
-> 全套《开卷八分钟》音频正在整理分享中，本集的夸克网盘链接稍后补上，敬请期待。
+全套《开卷八分钟》音频正在整理分享中，本集的夸克网盘链接稍后补上，敬请期待。
 
 
 ---
@@ -44,4 +55,4 @@ draft: true
 - 上一篇：[《万历十五年》](/humanities/kaijuan-youyi-wan-li-shi-wu-nian/)  ·  2007-11-13
 - 下一篇：[《阅读的故事》](/humanities/kaijuan-youyi-yue-du-de-gu-shi/)  ·  2007-11-29
 
-> 《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。
+<p class="note-text">《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。</p>

@@ -27,15 +27,26 @@ draft: true
 《长尾理论》适合谁阅读
 
 做内容、做小生意、关心数字经济的读者。
-## 📜 书中摘录
 
-> “我们的文化和经济重心正在加速转移，从需求曲线的少数大热门（主流产品和市场）转向需求曲线尾部的大量利基产品和市场。”
-> “长尾不过是不经经济稀缺过滤的文化。”
-> “我们正进入一个选择前所未有的时代。这是一件好事。”
+<div class="excerpt-box">
+  <div class="excerpt-box__head">📜 书中摘录</div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“我们的文化和经济重心正在加速转移，从需求曲线的少数大热门（主流产品和市场）转向需求曲线尾部的大量利基产品和市场。”</p>
+    <p class="excerpt-src">—— 出自长尾理论</p>
+  </div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“长尾不过是不经经济稀缺过滤的文化。”</p>
+    <p class="excerpt-src">—— 出自长尾理论</p>
+  </div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“我们正进入一个选择前所未有的时代。这是一件好事。”</p>
+    <p class="excerpt-src">—— 出自长尾理论</p>
+  </div>
+</div>
 
 ## 📥 试听与转存
 
-> 本集完整音频已分享至夸克网盘，点下方链接即可**一键试听 / 转存**到你的夸克网盘，随时随地听梁文道讲书。
+本集完整音频已分享至夸克网盘，点下方链接即可**一键试听 / 转存**到你的夸克网盘，随时随地听梁文道讲书。
 
 - 夸克网盘（本集音频）：[克里斯·安德森《长尾理论》 · 一键试听 / 转存](https://pan.quark.cn/s/61219846aab9)
 
@@ -47,4 +58,4 @@ draft: true
 - 上一篇：[《失语者的呼声》](/humanities/kaijuan-youyi-shi-yu-zhe-de-hu-sheng/)  ·  2007-01-29
 - 下一篇：[《碧奴》](/humanities/kaijuan-youyi-bi-nu/)  ·  2007-01-31
 
-> 《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。
+<p class="note-text">《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。</p>

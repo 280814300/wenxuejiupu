@@ -34,15 +34,26 @@ draft: true
 《红楼梦》适合谁阅读
 
 想慢下来读一部“大书”的人；对人情、饮食、器物背后的隐喻有兴趣的人。
-## 📜 书中摘录
 
-> “满纸荒唐言，一把辛酸泪。都云作者痴，谁解其中味。”
-> “世事洞明皆学问，人情练达即文章。”
-> “假作真时真亦假，无为有处有还无。”
+<div class="excerpt-box">
+  <div class="excerpt-box__head">📜 书中摘录</div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“满纸荒唐言，一把辛酸泪。都云作者痴，谁解其中味。”</p>
+    <p class="excerpt-src">—— 出自红楼梦</p>
+  </div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“世事洞明皆学问，人情练达即文章。”</p>
+    <p class="excerpt-src">—— 出自红楼梦</p>
+  </div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“假作真时真亦假，无为有处有还无。”</p>
+    <p class="excerpt-src">—— 出自红楼梦</p>
+  </div>
+</div>
 
 ## 📥 试听与转存
 
-> 全套《开卷八分钟》音频正在整理分享中，本集的夸克网盘链接稍后补上，敬请期待。
+全套《开卷八分钟》音频正在整理分享中，本集的夸克网盘链接稍后补上，敬请期待。
 
 
 ---
@@ -52,4 +63,4 @@ draft: true
 - 上一篇：[《莎士比亚书店》](/humanities/kaijuan-youyi-sha-shi-bi-ya-shu-dian/)  ·  2008-10-15
 - 下一篇：[《十个词汇里的中国》](/humanities/kaijuan-youyi-shi-ge-ci-hui-li-de-zhong-guo/)  ·  2011-02-18
 
-> 《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。
+<p class="note-text">《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。</p>

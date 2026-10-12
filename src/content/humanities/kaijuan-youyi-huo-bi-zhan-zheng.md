@@ -27,15 +27,26 @@ draft: true
 《货币战争》适合谁阅读
 
 对金融好奇但怕枯燥的人；想理解“通俗叙事如何塑造认知”的人。
-## 📜 书中摘录
 
-> “自1694年英格兰银行成立以来的300多年间，几乎每一场世界重大变故背后，都能看到国际金融资本势力的身影。”
-> “货币即权力，所有大国博弈，归根到底都是货币战争。”
-> “只要我能控制一个国家的货币发行，我不在乎谁制定法律。”
+<div class="excerpt-box">
+  <div class="excerpt-box__head">📜 书中摘录</div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“自1694年英格兰银行成立以来的300多年间，几乎每一场世界重大变故背后，都能看到国际金融资本势力的身影。”</p>
+    <p class="excerpt-src">—— 出自货币战争</p>
+  </div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“货币即权力，所有大国博弈，归根到底都是货币战争。”</p>
+    <p class="excerpt-src">—— 出自货币战争</p>
+  </div>
+  <div class="excerpt-item">
+    <p class="excerpt-text">“只要我能控制一个国家的货币发行，我不在乎谁制定法律。”</p>
+    <p class="excerpt-src">—— 出自货币战争</p>
+  </div>
+</div>
 
 ## 📥 试听与转存
 
-> 全套《开卷八分钟》音频正在整理分享中，本集的夸克网盘链接稍后补上，敬请期待。
+全套《开卷八分钟》音频正在整理分享中，本集的夸克网盘链接稍后补上，敬请期待。
 
 
 ---
@@ -45,4 +56,4 @@ draft: true
 - 上一篇：[《霍乱时期的爱情》](/humanities/kaijuan-youyi-huo-luan-shi-qi-de-ai-qing/)  ·  2007-12-14
 - 下一篇：[《物种起源》](/humanities/kaijuan-youyi-wu-zhong-qi-yuan/)  ·  2007-12-24
 
-> 《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。
+<p class="note-text">《开卷八分钟·梁文道》全 2030 期（2007–2014），文学酒铺持续整理中，完整目录将随发布补充。</p>
