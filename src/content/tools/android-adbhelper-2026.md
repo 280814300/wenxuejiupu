@@ -50,16 +50,3 @@ draft: false
 
 把"ADB 调试"装进口袋——甲壳虫 ADB 助手让没有电脑、没有 Root 的安卓设备管理，也变得随手就能做。
 
----
-
-## 本系列文章
-
-> 《开源 Android 工具推荐》系列（共 5 篇），建议按编号阅读：
-
-- [（一）gkd：用订阅规则自动跳过开屏广告](/tools/android-gkd-2026/)
-- [（二）短信转发器 SmsForwarder：备用机短信自动转发](/tools/android-smsforwarder-2026/)
-- [（三）甲壳虫 ADB 助手：手机控手机 / 电视 / 车机](/tools/android-adbhelper-2026/)
-- [（四）MusicFree：插件化无广告免费音乐播放器](/tools/android-musicfree-2026/)
-- （五）便捷下载：待补充真实信息
-
-> 你正在读：**（三）甲壳虫 ADB 助手，手机控手机 / 电视 / 车机** ← 本文

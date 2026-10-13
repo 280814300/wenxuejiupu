@@ -49,16 +49,3 @@ SmsForwarder 是一款 **开源 Android 应用**，监控手机的短信、来�
 
 一台吃灰的旧 Android 手机 + SmsForwarder，等于白捡一个"永远在线、自动转发"的短信秘书——而且完全开源免费。
 
----
-
-## 本系列文章
-
-> 《开源 Android 工具推荐》系列（共 5 篇），建议按编号阅读：
-
-- [（一）gkd：用订阅规则自动跳过开屏广告](/tools/android-gkd-2026/)
-- [（二）短信转发器 SmsForwarder：备用机短信自动转发](/tools/android-smsforwarder-2026/)
-- [（三）甲壳虫 ADB 助手：手机控手机 / 电视 / 车机](/tools/android-adbhelper-2026/)
-- [（四）MusicFree：插件化无广告免费音乐播放器](/tools/android-musicfree-2026/)
-- （五）便捷下载：待补充真实信息
-
-> 你正在读：**（二）短信转发器 SmsForwarder，备用机短信自动转发** ← 本文
