@@ -1,6 +1,6 @@
 ---
-title: 短信转发器 备用机短信转发到微信 免费
-description: 短信转发器 SmsForwarder 是一款把备用机短信、来电、App 通知自动转发到微信、钉钉、飞书、邮箱、Telegram 的安卓工具，免费开源，是双卡和备用机用户的消息中枢。
+title: 短信转发器 备用机短信转发到微信 验证码自动转发 双卡 免费安卓
+description: 短信转发器 SmsForwarder 把备用机短信、来电、App 通知自动转发到微信、钉钉、飞书、邮箱、Telegram，免费开源，是双卡和备用机用户的消息中枢。
 slug: android-smsforwarder-2026
 pubDate: 2026-10-14
 tags: ["开源", "Android", "效率工具", "短信转发"]
@@ -51,4 +51,7 @@ SmsForwarder 是一款 **Android 应用**，监控手机的短信、来电和 Ap
 
 ## 下载指引
 
-打开夸克网盘 App 或网页端，搜索"SmsForwarder"或"短信转发器"即可获取本文推荐的下载与配置资源，把备用机短信一键转发到微信。
+<div class="card" style="border:2px solid #0ea5e9;background:#f0f9ff;text-align:center;padding:1.15rem;margin:1.25rem 0;">
+<strong style="font-size:1.05rem;">点击下载指引 →</strong><br/>
+<a href="https://github.com/pppscn/SmsForwarder/releases" style="display:inline-block;margin-top:.6rem;padding:.55rem 1.3rem;background:#0ea5e9;color:#fff;border-radius:8px;text-decoration:none;font-weight:600;">立即获取 短信转发器 下载与配置</a>
+</div>

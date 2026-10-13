@@ -1,13 +1,13 @@
 ---
-title: gkd 跳过开屏广告 自动点击 安卓必备
-description: gkd 是一款能自动跳过开屏广告、自定义屏幕点击的安卓工具，无需 Root，靠订阅规则一键跳过各大 App 开屏弹窗广告，把重复点击交给手机自己完成。
+title: GKD 跳过开屏广告 自动点击 免root 安卓去广告神器 免费
+description: GKD 是一款能自动跳过开屏广告、自定义屏幕点击的安卓神器，无需 Root，靠订阅规则一键跳过各大 App 开屏弹窗广告，把重复点击交给手机自己完成，免费开源。
 slug: android-gkd-2026
 pubDate: 2026-10-13
-tags: ["开源", "Android", "效率工具", "gkd"]
+tags: ["开源", "Android", "效率工具", "GKD"]
 repo: https://github.com/gkd-kit/gkd
 license: GPL-3.0
 platforms: ["Android"]
-summary: gkd 跳过开屏广告、自动点击的安卓工具，无需 Root，订阅规则一键跳过各大 App 开屏弹窗。
+summary: GKD 跳过开屏广告、自动点击的安卓神器，无需 Root，订阅规则一键跳过开屏弹窗，免费开源。
 author: 文学酒铺
 draft: false
 ---
@@ -16,11 +16,11 @@ draft: false
 
 你有没有这种体验：打开一个 App，先得看 3 秒开屏广告；想点"跳过"，它偏把按钮做得又小又躲。
 
-这类重复、机械的点击，最该交给工具。今天聊的 **gkd**，就是专门干这个的利器——它用"规则"告诉手机：在这个界面、看到这段文字，就帮我点这里。关键词就两个：**跳过开屏广告**、**自动点击**。
+这类重复、机械的点击，最该交给工具。今天聊的 **GKD**，就是专门干这个的利器——它用"规则"告诉手机：在这个界面、看到这段文字，就帮我点这里。关键词就两个：**跳过开屏广告**、**自动点击**。
 
 ## 它是什么
 
-gkd（全称基于 Accessibility + 高级选择器 + 订阅规则的自定义屏幕点击应用）是一个 **Android 应用**，核心思路是：
+GKD（全称基于 Accessibility + 高级选择器 + 订阅规则的自定义屏幕点击应用）是一个 **Android 应用**，核心思路是：
 
 > 在指定界面，满足指定条件（比如屏幕上存在某段文字）时，自动点击特定节点或位置，或执行其它操作。
 
@@ -39,7 +39,7 @@ gkd（全称基于 Accessibility + 高级选择器 + 订阅规则的自定义屏
 - 经常要在固定界面做重复点击（确认、关闭、跳转）的人；
 - 喜欢折腾规则、把手机用得更顺手的人。
 
-> 小提醒：gkd 基于无障碍服务，需要在系统设置里给它"无障碍"权限；规则订阅来自社区，使用前自己看一眼规则内容更稳妥。
+> 小提醒：GKD 基于无障碍服务，需要在系统设置里给它"无障碍"权限；规则订阅来自社区，使用前自己看一眼规则内容更稳妥。
 
 ## 开源地址与许可证
 
@@ -49,8 +49,11 @@ gkd（全称基于 Accessibility + 高级选择器 + 订阅规则的自定义屏
 
 ## 一句话总结
 
-如果你只想装一个"让开屏广告消失"的工具，gkd 是目前最省心、规则最全的选择——装好订阅，剩下的交给它。
+如果你只想装一个"让开屏广告消失"的工具，GKD 是目前最省心、规则最全的选择——装好订阅，剩下的交给它。
 
 ## 下载指引
 
-打开夸克网盘 App 或网页端，搜索"gkd"即可获取本文推荐的下载与配置资源，跟着订阅规则一键跳过开屏广告。
+<div class="card" style="border:2px solid #0ea5e9;background:#f0f9ff;text-align:center;padding:1.15rem;margin:1.25rem 0;">
+<strong style="font-size:1.05rem;">点击下载指引 →</strong><br/>
+<a href="https://github.com/gkd-kit/gkd/releases" style="display:inline-block;margin-top:.6rem;padding:.55rem 1.3rem;background:#0ea5e9;color:#fff;border-radius:8px;text-decoration:none;font-weight:600;">立即获取 GKD 下载与配置</a>
+</div>

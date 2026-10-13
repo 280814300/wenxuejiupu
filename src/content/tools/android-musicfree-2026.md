@@ -1,5 +1,5 @@
 ---
-title: MusicFree 无广告音乐播放器 插件音源 免费
+title: MusicFree 无广告音乐播放器 插件音源 听遍全网 免费安卓
 description: MusicFree 是一款插件化、无广告、免费的安卓音乐播放器，本身不集成音源，所有搜索、播放、歌单、歌词都靠插件实现，数据本地存储，一个播放器听遍全网。
 slug: android-musicfree-2026
 pubDate: 2026-10-16
@@ -57,4 +57,7 @@ MusicFree 是一款 **插件化、定制化、无广告的免费音乐播放器*
 
 ## 下载指引
 
-打开夸克网盘 App 或网页端，搜索"MusicFree"即可获取本文推荐的下载与配置资源，装好插件一站式听遍全网。
+<div class="card" style="border:2px solid #0ea5e9;background:#f0f9ff;text-align:center;padding:1.15rem;margin:1.25rem 0;">
+<strong style="font-size:1.05rem;">点击下载指引 →</strong><br/>
+<a href="https://github.com/maotoumao/MusicFree/releases" style="display:inline-block;margin-top:.6rem;padding:.55rem 1.3rem;background:#0ea5e9;color:#fff;border-radius:8px;text-decoration:none;font-weight:600;">立即获取 MusicFree 下载与配置</a>
+</div>

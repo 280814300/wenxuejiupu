@@ -1,6 +1,6 @@
 ---
-title: 甲壳虫adb助手 无线调试 手机控手机 电视车机
-description: 甲壳虫 ADB 助手是一款基于 ADB 的安卓设备管理工具，无需 Root 即可无线调试、管理应用、传文件、投屏，手机控手机、电视、车机都很顺手。
+title: 甲壳虫adb助手 无线调试 手机控手机 电视车机 免root 文件传输投屏
+description: 甲壳虫 ADB 助手是一款基于 ADB 的安卓设备管理工具，无需 Root 即可无线调试、管理应用、传文件、投屏，手机控手机、电视、车机都顺手。
 slug: android-adbhelper-2026
 pubDate: 2026-10-15
 tags: ["Android", "效率工具", "ADB"]
@@ -52,4 +52,7 @@ draft: false
 
 ## 下载指引
 
-打开夸克网盘 App 或网页端，搜索"甲壳虫 ADB 助手"即可获取本文推荐的下载与配置资源，扫码无线调试、手机控手机一学就会。
+<div class="card" style="border:2px solid #0ea5e9;background:#f0f9ff;text-align:center;padding:1.15rem;margin:1.25rem 0;">
+<strong style="font-size:1.05rem;">点击下载指引 →</strong><br/>
+<a href="https://github.com/didjdk/adbhelper/releases" style="display:inline-block;margin-top:.6rem;padding:.55rem 1.3rem;background:#0ea5e9;color:#fff;border-radius:8px;text-decoration:none;font-weight:600;">立即获取 甲壳虫ADB助手 下载与配置</a>
+</div>
