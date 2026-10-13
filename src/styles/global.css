@@ -494,8 +494,17 @@ body {
   flex-wrap: wrap;
   gap: 6px;
 }
-.tag-cloud .tag-pill {
-  cursor: default;
+.tag-cloud a.tag-pill {
+  cursor: pointer;
+}
+a.tag-pill {
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+a.tag-pill:hover {
+  background: var(--brand);
+  color: #fff;
 }
 
 /* 首页分类方块：渐变圆角图标徽章（提升立体感） */

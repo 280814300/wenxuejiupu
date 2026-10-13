@@ -1,0 +1,33 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const columns = ['ai', 'tools', 'resources', 'humanities'] as const;
+const counts: Record<string, number> = {};
+for (const col of columns) {
+  const entries = (await getCollection(col)).filter((e) => !e.data.draft);
+  for (const e of entries) {
+    for (const t of e.data.tags) counts[t] = (counts[t] || 0) + 1;
+  }
+}
+const tags = Object.entries(counts).sort(
+  (a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'zh')
+);
+---
+
+<BaseLayout title="标签" description="文学酒铺全部内容标签">
+  <h1 class="text-2xl font-bold mb-6">全部标签</h1>
+  <div class="flex flex-wrap gap-2">
+    {
+      tags.map(([t, c]) => (
+        <a
+          href={`/tags/${encodeURIComponent(t)}/`}
+          class="tag-pill no-underline"
+        >
+          {t} <span class="opacity-60">({c})</span>
+        </a>
+      ))
+    }
+  </div>
+  {tags.length === 0 && <p class="text-gray-500">暂无标签。</p>}
+</BaseLayout>

@@ -133,7 +133,7 @@ const jsonLdAll = [jsonLd, bookLd, reviewLd].filter(Boolean) as Record<
         d.tags.length > 0 && (
           <div class="flex flex-wrap gap-1 mb-4 meta-mono">
             {d.tags.map((t: string) => (
-              <span class="tag-pill">#{t}</span>
+              <a href={`/tags/${encodeURIComponent(t)}/`} class="tag-pill no-underline">#{t}</a>
             ))}
           </div>
         )
@@ -168,7 +168,7 @@ const jsonLdAll = [jsonLd, bookLd, reviewLd].filter(Boolean) as Record<
               <span class="text-gray-500 shrink-0">标签：</span>
               <div class="flex flex-wrap gap-1">
                 {d.tags.map((t: string) => (
-                  <span class="tag-pill">#{t}</span>
+                  <a href={`/tags/${encodeURIComponent(t)}/`} class="tag-pill no-underline">#{t}</a>
                 ))}
               </div>
             </div>

@@ -1,0 +1,83 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const q = Astro.url.searchParams.get('q') ?? '';
+---
+
+<BaseLayout title="搜索" description="在文学酒铺内搜索文章">
+  <h1 class="text-2xl font-bold mb-4">站内搜索</h1>
+  <form
+    id="search-form"
+    class="flex gap-2 mb-6"
+    action="/search"
+    method="get"
+    role="search"
+  >
+    <input
+      id="search-input"
+      type="search"
+      name="q"
+      value={q}
+      placeholder="输入关键词，搜索标题 / 摘要 / 标签…"
+      aria-label="搜索关键词"
+      class="flex-1 px-4 py-2 rounded-lg border border-[var(--card-border)] bg-[var(--card-bg)] text-[var(--text)] outline-none focus:border-[var(--brand)]"
+    />
+    <button type="submit" class="btn btn-primary">搜索</button>
+  </form>
+
+  <div id="results"></div>
+  <p id="empty" class="text-gray-500 hidden">没有找到相关文章，换个关键词试试。</p>
+
+  <script is:inline>
+    (function () {
+      const input = document.getElementById('search-input');
+      const results = document.getElementById('results');
+      const empty = document.getElementById('empty');
+      let data = null;
+      const esc = (s) =>
+        String(s).replace(/[&<>"]/g, (c) =>
+          ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c])
+        );
+      async function ensure() {
+        if (data) return;
+        const res = await fetch('/search-index.json');
+        data = await res.json();
+      }
+      async function search(q) {
+        q = q.trim().toLowerCase();
+        if (!q) {
+          results.innerHTML = '';
+          empty.classList.add('hidden');
+          return;
+        }
+        await ensure();
+        const list = data
+          .filter(
+            (it) =>
+              it.title.toLowerCase().includes(q) ||
+              it.description.toLowerCase().includes(q) ||
+              it.tags.some((t) => t.toLowerCase().includes(q))
+          )
+          .slice(0, 50);
+        if (!list.length) {
+          results.innerHTML = '';
+          empty.classList.remove('hidden');
+          return;
+        }
+        empty.classList.add('hidden');
+        results.innerHTML = list
+          .map(
+            (it) => `
+          <a href="${esc(it.url)}" class="card block p-4 no-underline text-inherit mb-3">
+            <div class="text-xs text-gray-500 mb-1">${esc(it.columnName)} · ${esc(it.pubDate)}</div>
+            <div class="text-lg font-semibold leading-snug">${esc(it.title)}</div>
+            <p class="text-sm text-gray-600 mt-1 leading-relaxed">${esc(it.description)}</p>
+          </a>`
+          )
+          .join('');
+      }
+      input.addEventListener('input', () => search(input.value));
+      const initial = new URLSearchParams(location.search).get('q') || '';
+      if (initial) search(initial);
+    })();
+  </script>
+</BaseLayout>

@@ -1,0 +1,44 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostCard from '../../components/PostCard.astro';
+
+export async function getStaticPaths() {
+  const columns = ['ai', 'tools', 'resources', 'humanities'] as const;
+  const byTag: Record<string, any[]> = {};
+  for (const col of columns) {
+    const entries = (await getCollection(col)).filter((e) => !e.data.draft);
+    for (const e of entries) {
+      for (const t of e.data.tags) {
+        (byTag[t] ||= []).push(e);
+      }
+    }
+  }
+  return Object.entries(byTag).map(([tag, entries]) => ({
+    params: { tag },
+    props: { tag, entries },
+  }));
+}
+
+const { tag, entries } = Astro.props;
+entries.sort(
+  (a: any, b: any) => b.data.pubDate.getTime() - a.data.pubDate.getTime()
+);
+---
+
+<BaseLayout
+  title={`标签：${tag}`}
+  description={`文学酒铺标签「${tag}」下的全部文章`}
+>
+  <a
+    href="/tags/"
+    class="no-underline text-inherit hover:text-brand text-sm">← 全部标签</a
+  >
+  <h1 class="text-2xl font-bold my-3">
+    标签：{tag}
+    <span class="text-base text-gray-500 font-normal">（{entries.length}）</span>
+  </h1>
+  <div class="grid gap-4 mt-4">
+    {entries.map((e: any) => <PostCard entry={e} />)}
+  </div>
+</BaseLayout>

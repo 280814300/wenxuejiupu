@@ -100,7 +100,7 @@ const lastUpdated = all.length ? all[0].data.pubDate : new Date();
         <div class="tag-cloud">
           {
             tags.map(([t, c]) => (
-              <span class="tag-pill" style={`font-size:${tagSize(c)}rem`}>#{t}</span>
+              <a href={`/tags/${encodeURIComponent(t)}/`} class="tag-pill no-underline" style={`font-size:${tagSize(c)}rem`}>#{t}</a>
             ))
           }
           {tags.length === 0 && <span class="text-sm text-gray-500">暂无标签</span>}

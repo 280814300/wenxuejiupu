@@ -32,7 +32,7 @@ const dateStr = d.pubDate.toISOString().slice(0, 10);
     d.tags.length > 0 && (
       <div class="mt-2 flex flex-wrap gap-1">
         {d.tags.map((t: string) => (
-          <span class="tag-pill">#{t}</span>
+          <a href={`/tags/${encodeURIComponent(t)}/`} class="tag-pill no-underline">#{t}</a>
         ))}
       </div>
     )
