@@ -1,0 +1,139 @@
+---
+// 主题切换器：调色板（data-theme）+ 明暗（data-mode），localStorage 持久化
+// 设计哲学参考 awesome-design-md / taste-skill：克制、一致性、可访问对比、避免花哨。
+const themes = [
+  { key: 'blue', name: '靛蓝', color: '#425AEF' },
+  { key: 'teal', name: '科技青', color: '#0ea5e9' },
+  { key: 'violet', name: '靛紫', color: '#7c3aed' },
+  { key: 'amber', name: '暖橙', color: '#ea580c' },
+  { key: 'green', name: '墨绿', color: '#059669' },
+];
+const modes = [
+  { key: 'light', name: '浅色' },
+  { key: 'dark', name: '深色' },
+  { key: 'auto', name: '跟随' },
+];
+---
+
+<div class="theme-switcher" id="theme-switcher">
+  <button
+    class="theme-switcher__btn"
+    id="theme-toggle"
+    type="button"
+    aria-label="切换主题与外观"
+    aria-expanded="false"
+  >
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      aria-hidden="true"
+    >
+      <circle cx="12" cy="12" r="9"></circle>
+      <path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor"></path>
+    </svg>
+  </button>
+
+  <div class="theme-switcher__panel" id="theme-panel" hidden>
+    <div class="theme-switcher__title">主题配色</div>
+    <div class="theme-switcher__swatches" role="group" aria-label="主题配色">
+      {
+        themes.map((t) => (
+          <button
+            class="swatch"
+            type="button"
+            data-theme-key={t.key}
+            title={t.name}
+            aria-label={t.name}
+            style={`--sw:${t.color}`}
+          />
+        ))
+      }
+    </div>
+    <div class="theme-switcher__title">外观模式</div>
+    <div class="theme-switcher__modes" role="group" aria-label="外观模式">
+      {
+        modes.map((m) => (
+          <button class="mode-btn" type="button" data-mode-key={m.key}>
+            {m.name}
+          </button>
+        ))
+      }
+    </div>
+  </div>
+</div>
+
+<script>
+  const root = document.documentElement;
+  const switcher = document.getElementById('theme-switcher');
+  const toggle = document.getElementById('theme-toggle');
+  const panel = document.getElementById('theme-panel');
+  const THEME_KEY = 'wj-theme';
+  const MODE_KEY = 'wj-mode';
+
+  function applyTheme(t: string) {
+    root.setAttribute('data-theme', t);
+    document
+      .querySelectorAll('.swatch')
+      .forEach((b) => b.classList.toggle('active', (b as HTMLElement).dataset.themeKey === t));
+    syncThemeColor();
+  }
+  function applyMode(m: string) {
+    root.setAttribute('data-mode', m);
+    document
+      .querySelectorAll('.mode-btn')
+      .forEach((b) => b.classList.toggle('active', (b as HTMLElement).dataset.modeKey === m));
+    syncThemeColor();
+  }
+  function syncThemeColor() {
+    const c = getComputedStyle(root).getPropertyValue('--brand').trim();
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta && c) meta.setAttribute('content', c);
+  }
+
+  // 初始同步（data-theme/data-mode 已由 <head> 内联脚本预设，避免闪烁）
+  applyTheme(root.getAttribute('data-theme') || 'blue');
+  applyMode(root.getAttribute('data-mode') || 'auto');
+
+  const w = window as any;
+  if (!w.__wjThemeWired) {
+    w.__wjThemeWired = true;
+
+    toggle?.addEventListener('click', () => {
+      panel!.hidden = !panel!.hidden;
+      toggle.setAttribute('aria-expanded', String(!panel!.hidden));
+    });
+
+    document.addEventListener('click', (e) => {
+      if (switcher && !switcher.contains(e.target as Node)) {
+        panel!.hidden = true;
+        toggle?.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    document.querySelectorAll('.swatch').forEach((b) =>
+      b.addEventListener('click', () => {
+        const t = (b as HTMLElement).dataset.themeKey!;
+        applyTheme(t);
+        try {
+          localStorage.setItem(THEME_KEY, t);
+        } catch {}
+      })
+    );
+
+    document.querySelectorAll('.mode-btn').forEach((b) =>
+      b.addEventListener('click', () => {
+        const m = (b as HTMLElement).dataset.modeKey!;
+        applyMode(m);
+        try {
+          localStorage.setItem(MODE_KEY, m);
+        } catch {}
+      })
+    );
+  }
+</script>

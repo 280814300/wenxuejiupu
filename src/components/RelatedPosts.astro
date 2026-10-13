@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 
 interface Props {
   slug: string;
-  collection: string;
+  collection: 'ai' | 'tools' | 'resources' | 'humanities';
   tags: string[];
 }
 const { slug, collection, tags } = Astro.props;

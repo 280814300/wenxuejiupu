@@ -2,34 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ── 配色参考 blog.zhheo.com（柔和、干净、有层次）── */
+/* ── 设计令牌：语义化表面 + 主题强调色 ──
+   设计哲学（参考 awesome-design-md / taste-skill）：
+   · 表面色（bg/card/border/text/btn）独立于强调色，按「明暗」切换；
+   · 强调色（brand/tech）按「主题」切换，每主题取自系统色阶，保证对比与协调；
+   · 默认 = 当前 zhheo 靛蓝（无选择时外观完全不变）。 */
+
 :root {
   color-scheme: light dark;
-  /* 亮色 */
-  --brand: #425AEF; /* 主题蓝 */
-  --brand-soft: #4259ef23; /* 主题蓝低透明（柔和投影 / 浅底） */
-  --bg: #f7f9fe; /* 页面背景：浅蓝灰 */
+  /* 浅色表面（默认） */
+  --bg: #f7f9fe;
   --card-bg: #ffffff;
   --card-border: #e3e8f7;
   --text: #363636;
   --text-soft: #8a93a6;
   --btn-bg: #edf0f7;
-  --tech: #0ea5e9; /* 科技青：进度条 / 网格 / 辉光 */
-  --font-sans: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; /* 参考 blog.zhheo.com 中文无衬线栈 */
+  /* 默认主题：靛蓝（zhheo） */
+  --brand: #425AEF;
+  --brand-soft: #4259ef23;
+  --tech: #0ea5e9;
+  /* 字体 */
+  --font-sans: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   --font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
 }
+
+/* 主题强调色（每主题一套，明暗通用；取自系统色阶，保证可读性） */
+:root[data-theme="teal"]   { --brand:#0ea5e9; --brand-soft:#0ea5e923; --tech:#14b8a6; }
+:root[data-theme="violet"] { --brand:#7c3aed; --brand-soft:#7c3aed23; --tech:#a855f7; }
+:root[data-theme="amber"]  { --brand:#ea580c; --brand-soft:#ea580c23; --tech:#f59e0b; }
+:root[data-theme="green"]  { --brand:#059669; --brand-soft:#05966923; --tech:#0d9488; }
+
+/* 靛蓝在暗色下切换为 zhheo 招牌琥珀金（保留既有观感） */
+:root[data-theme="blue"][data-mode="dark"]   { --brand:#ffc848; --brand-soft:#f2b94b23; --tech:#38bdf8; }
 @media (prefers-color-scheme: dark) {
-  :root {
-    /* 暗色：采用 zhheo 的琥珀金强调 + 深色背景 */
-    --brand: #ffc848;
-    --brand-soft: #f2b94b23;
+  :root[data-theme="blue"]:not([data-mode="light"]) { --brand:#ffc848; --brand-soft:#f2b94b23; --tech:#38bdf8; }
+}
+
+/* 明暗 · 浅色（显式） */
+:root[data-mode="light"] { color-scheme: light; }
+
+/* 明暗 · 深色（显式） */
+:root[data-mode="dark"] {
+  color-scheme: dark;
+  --bg: #17191d;
+  --card-bg: #1b1c20;
+  --card-border: #3d3d3f;
+  --text: #f7f7fa;
+  --text-soft: #9aa3ad;
+  --btn-bg: #30343f;
+}
+
+/* 明暗 · 跟随系统（系统为暗时套用深色表面） */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-mode="light"]) {
+    color-scheme: dark;
     --bg: #17191d;
     --card-bg: #1b1c20;
     --card-border: #3d3d3f;
     --text: #f7f7fa;
     --text-soft: #9aa3ad;
     --btn-bg: #30343f;
-    --tech: #38bdf8; /* 暗色下科技青更亮，用于辉光 / 网格 */
   }
 }
 
@@ -214,26 +246,20 @@ body {
   list-style: circle;
 }
 
-/* 暗黑模式跟随系统：把 Tailwind 灰类映射到 zhheo 暗色值 */
+/* 暗黑模式：把 Tailwind 灰类映射到主题暗色值（显式深色 + 跟随系统暗色） */
+:root[data-mode="dark"] .border-gray-200 { border-color: var(--card-border) !important; }
+:root[data-mode="dark"] .text-gray-500  { color: var(--text-soft) !important; }
+:root[data-mode="dark"] .text-gray-600  { color: var(--text-soft) !important; }
+:root[data-mode="dark"] .text-gray-900  { color: var(--text) !important; }
+:root[data-mode="dark"] .bg-gray-50     { background-color: var(--btn-bg) !important; }
+:root[data-mode="dark"] .bg-white       { background-color: var(--card-bg) !important; }
 @media (prefers-color-scheme: dark) {
-  .border-gray-200 {
-    border-color: var(--card-border) !important;
-  }
-  .text-gray-500 {
-    color: var(--text-soft) !important;
-  }
-  .text-gray-600 {
-    color: var(--text-soft) !important;
-  }
-  .text-gray-900 {
-    color: var(--text) !important;
-  }
-  .bg-gray-50 {
-    background-color: var(--btn-bg) !important;
-  }
-  .bg-white {
-    background-color: var(--card-bg) !important;
-  }
+  :root:not([data-mode="light"]) .border-gray-200 { border-color: var(--card-border) !important; }
+  :root:not([data-mode="light"]) .text-gray-500  { color: var(--text-soft) !important; }
+  :root:not([data-mode="light"]) .text-gray-600  { color: var(--text-soft) !important; }
+  :root:not([data-mode="light"]) .text-gray-900  { color: var(--text) !important; }
+  :root:not([data-mode="light"]) .bg-gray-50     { background-color: var(--btn-bg) !important; }
+  :root:not([data-mode="light"]) .bg-white       { background-color: var(--card-bg) !important; }
 }
 
 /* 顶部导航（zhheo 式：sticky + 半透明模糊 + 底部细描边） */
@@ -343,36 +369,6 @@ body {
   line-height: 1.7;
 }
 
-/* 核心结论卡：首屏一句话书评（品牌色左边线 + 柔和渐变底，呼应摘录卡语言） */
-.conclusion-box {
-  background: linear-gradient(135deg, var(--card-bg), color-mix(in srgb, var(--brand) 7%, var(--card-bg)));
-  border: 1px solid var(--card-border);
-  border-left: 4px solid var(--brand);
-  border-radius: 14px;
-  padding: 1.1rem 1.2rem;
-  margin: 1.2rem 0;
-  box-shadow: 0 4px 14px -6px rgba(0,0,0,0.12);
-}
-.conclusion-box__head {
-  font-family: var(--font-mono);
-  font-size: 0.8em;
-  letter-spacing: 0.05em;
-  color: var(--text-soft);
-  font-weight: 600;
-  margin-bottom: 0.6rem;
-}
-.conclusion-text {
-  margin: 0;
-  font-size: 1.06em;
-  line-height: 1.78;
-  color: var(--text);
-}
-.conclusion-meta {
-  margin: 0.7rem 0 0;
-  font-size: 0.8em;
-  color: var(--text-soft);
-}
-
 /* FAQ 区块：问答卡片（利于精选摘要 + 大模型引用） */
 .faq-item { margin: 1.1rem 0; }
 .faq-q {
@@ -413,8 +409,20 @@ body {
 }
 
 /* 暗色模式：固定网格底纹（低透明度覆盖层，仅暗色） */
+:root[data-mode="dark"] body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image:
+    linear-gradient(var(--tech) 1px, transparent 1px),
+    linear-gradient(90deg, var(--tech) 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.05;
+}
 @media (prefers-color-scheme: dark) {
-  body::before {
+  :root:not([data-mode="light"]) body::before {
     content: '';
     position: fixed;
     inset: 0;
@@ -531,6 +539,102 @@ a:hover .cat-badge {
 a.card:hover .cat-arrow {
   opacity: 1;
   transform: translateX(0);
+}
+
+/* ─────────────────────────────────────────────
+   主题切换器（右下浮窗：调色板 + 明暗）
+   ───────────────────────────────────────────── */
+.theme-switcher {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 50;
+}
+.theme-switcher__btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--card-bg);
+  color: var(--brand);
+  border: 1px solid var(--card-border);
+  box-shadow: 0 6px 18px -8px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+.theme-switcher__btn:hover {
+  transform: translateY(-2px);
+  border-color: var(--brand);
+}
+.theme-switcher__panel {
+  position: absolute;
+  right: 0;
+  bottom: 56px;
+  width: 224px;
+  padding: 0.9rem;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 14px;
+  box-shadow: 0 14px 34px -14px rgba(0, 0, 0, 0.45);
+}
+.theme-switcher__title {
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--text-soft);
+  margin: 0.1rem 0 0.55rem;
+}
+.theme-switcher__swatches {
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 0.95rem;
+}
+.swatch {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--sw);
+  border: 2px solid transparent;
+  cursor: pointer;
+  padding: 0;
+  box-shadow: 0 2px 6px -2px rgba(0, 0, 0, 0.35);
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+.swatch:hover {
+  transform: scale(1.12);
+}
+.swatch.active {
+  border-color: var(--text);
+}
+.theme-switcher__modes {
+  display: flex;
+  gap: 0.4rem;
+}
+.mode-btn {
+  flex: 1;
+  padding: 0.4rem 0;
+  font-size: 0.78rem;
+  border-radius: 8px;
+  background: var(--btn-bg);
+  color: var(--text);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.mode-btn:hover {
+  border-color: var(--card-border);
+}
+.mode-btn.active {
+  background: var(--brand);
+  color: #fff;
+}
+/* 小屏：浮窗不贴边过紧 */
+@media (max-width: 480px) {
+  .theme-switcher {
+    right: 0.75rem;
+    bottom: 0.75rem;
+  }
 }
 
 

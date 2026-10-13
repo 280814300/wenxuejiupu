@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import ThemeSwitcher from '../components/ThemeSwitcher.astro';
 import { ClientRouter } from 'astro:transitions';
 import { SITE } from '../consts';
 
@@ -41,6 +42,18 @@ const jsonLdList = jsonLd
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- 防闪烁：在 CSS 变量解析前预设主题/明暗（localStorage 优先） -->
+    <script is:inline>
+      (function () {
+        try {
+          var t = localStorage.getItem('wj-theme') || 'blue';
+          var m = localStorage.getItem('wj-mode') || 'auto';
+          var r = document.documentElement;
+          r.setAttribute('data-theme', t);
+          r.setAttribute('data-mode', m);
+        } catch (e) {}
+      })();
+    </script>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{pageTitle}</title>
     <meta name="description" content={description} />
@@ -89,6 +102,7 @@ const jsonLdList = jsonLd
       <slot />
     </main>
     <Footer />
+    <ThemeSwitcher />
     <script is:inline>
       (function () {
         var bar = document.getElementById('reading-progress');
