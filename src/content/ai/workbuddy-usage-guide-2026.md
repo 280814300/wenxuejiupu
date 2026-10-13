@@ -135,4 +135,10 @@ WorkBuddy 覆盖从单次任务到持续项目的多种场景，也能通过专�
 
 WorkBuddy 由腾讯出品，直接在官方客户端或官网使用即可。想系统学，官方使用文档地址（建议结合阅读，纯文字不跳转）：workbuddy.cn/docs/workbuddy/Overview，里面按创建任务、任务管理、任务对话、结果查看四块展开，和本篇教程一一对应。
 
+<div class="card" style="border:2px solid #10b981;background:#ecfdf5;text-align:center;padding:1.3rem;margin:1.25rem 0;">
+<strong style="font-size:1.1rem;color:#047857;">免费下载 WorkBuddy 用我的邀请码 双方都得推荐积分</strong><br/>
+<span style="display:inline-block;margin-top:.5rem;color:#065f46;font-size:.92rem;">通过下面邀请链接注册 你和我都能拿到平台推荐奖励</span><br/>
+<a href="https://www.workbuddy.cn/events/invite?inviteCode=5vebsbd3y" style="display:inline-block;margin-top:.75rem;padding:.65rem 1.6rem;background:#10b981;color:#fff;border-radius:8px;text-decoration:none;font-weight:600;">立即下载使用 WorkBuddy</a>
+</div>
+
 > 工具是手段，产出才是目的。先把需求想清楚，再让 WorkBuddy 帮你把活干完。
