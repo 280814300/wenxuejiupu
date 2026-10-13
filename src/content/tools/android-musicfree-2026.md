@@ -1,13 +1,13 @@
 ---
-title: 开源 Android 工具推荐（四）：MusicFree，插件化无广告免费音乐播放器
-description: MusicFree（maotoumao/MusicFree）是一款插件化、定制化、无广告的免费开源音乐播放器，支持 Android 与 Harmony OS，本身不集成音源，所有功能靠插件，数据本地存储。
+title: MusicFree 无广告音乐播放器 插件音源 免费
+description: MusicFree 是一款插件化、无广告、免费的安卓音乐播放器，本身不集成音源，所有搜索、播放、歌单、歌词都靠插件实现，数据本地存储，一个播放器听遍全网。
 slug: android-musicfree-2026
 pubDate: 2026-10-16
-tags: ["开源", "Android", "效率工具", "App推荐", "音乐播放器"]
+tags: ["开源", "Android", "效率工具", "音乐播放器"]
 repo: https://github.com/maotoumao/MusicFree
 license: AGPL-3.0
 platforms: ["Android"]
-summary: 插件化、无广告、免费的 Android/Harmony OS 音乐播放器，本身不集成音源，所有搜索/播放靠插件，数据本地存储，AGPL-3.0 开源。
+summary: MusicFree 无广告音乐播放器，插件化架构、音源靠插件，免费开源，一个播放器听遍全网。
 author: 文学酒铺
 draft: false
 ---
@@ -16,7 +16,7 @@ draft: false
 
 市面上的音乐 App，要么广告多，要么会员墙高，要么"云村""绿钻"各守一摊。想在一个地方听个痛快，反而很难。
 
-**MusicFree** 的思路很"极客"也很干净：它**自己不内置任何音源**，只做一个播放器外壳，所有搜索、播放、歌单、歌词都靠**插件**实现。你要听什么，装对应的插件就行。无广告、免费、开源。
+**MusicFree** 的思路很干净：它**自己不内置任何音源**，只做一个播放器外壳，所有搜索、播放、歌单、歌词都靠**插件**实现。你要听什么，装对应的插件就行。关键词就是：**无广告音乐播放器**、**插件音源**。
 
 ## 它是什么
 
@@ -36,7 +36,7 @@ MusicFree 是一款 **插件化、定制化、无广告的免费音乐播放器*
 ## 适合谁 / 使用场景
 
 - 受够了会员墙和开屏广告、想要"一个播放器听遍全网"的人；
-- 愿意自己装插件、动手配置音源源的玩家；
+- 愿意自己装插件、动手配置音源的玩家；
 - 在意隐私、不想被 App 收集听歌习惯的人。
 
 > 几个官方提醒（节选自项目说明）：
@@ -46,12 +46,15 @@ MusicFree 是一款 **插件化、定制化、无广告的免费音乐播放器*
 
 ## 开源地址与许可证
 
-- 仓库：[github.com/maotoumao/MusicFree](https://github.com/maotoumao/MusicFree)
-- 桌面版：[github.com/maotoumao/MusicFreeDesktop](https://github.com/maotoumao/MusicFreeDesktop)
-- 许可证：**AGPL-3.0**
+- GitHub 仓库：github.com/maotoumao/MusicFree
+- 桌面版仓库：github.com/maotoumao/MusicFreeDesktop
+- 许可证：AGPL-3.0
 - 平台：Android、Harmony OS（另有桌面版）
 
 ## 一句话总结
 
 如果你想要一个"不内置音源、但什么都能听、还无广告"的播放器，MusicFree 把选择权交回了你自己——装什么插件，听什么世界。
 
+## 下载指引
+
+打开夸克网盘 App 或网页端，搜索"MusicFree"即可获取本文推荐的下载与配置资源，装好插件一站式听遍全网。
