@@ -53,6 +53,7 @@ def main():
 
     print(f"[publish_batch] 目标日={args.date}  本批 {len(batch)} 篇:")
     changed = []
+    modified = []
     for pub, f in batch:
         txt = open(f, encoding="utf-8").read()
         txt = re.sub(r"(?m)^pubDate:.*$", f"pubDate: {args.date}", txt, count=1)
@@ -60,20 +61,24 @@ def main():
         if not args.dry_run:
             open(f, "w", encoding="utf-8").write(txt)
         changed.append((os.path.basename(f), pub))
+        modified.append(f)
         print(f"  - {os.path.basename(f)}  (原 {pub} -> 发布 {args.date})")
 
     if args.dry_run:
         print("[publish_batch] DRY-RUN，未写入。")
         return
 
-    # 本地提交（便于后续部署；失败不阻断发布）
+    # 本地提交（仅 add 本次改动的文章文件，绝不 git add -A，
+    # 避免把未提交的主题/其它改动卷进提交并随部署 push 出去）
     try:
-        subprocess.run(["git", "-C", os.path.dirname(OUT) + "/../..", "add", "-A"],
-                       check=True, capture_output=True)
+        repo = os.path.dirname(OUT) + "/../.."
+        if modified:
+            subprocess.run(["git", "-C", repo, "add", *modified],
+                           check=True, capture_output=True)
         msg = f"chore: 自动发布开卷八分钟 2007-01 批次 {args.date} ({len(changed)} 篇)"
-        subprocess.run(["git", "-C", os.path.dirname(OUT) + "/../..", "commit", "-m", msg],
+        subprocess.run(["git", "-C", repo, "commit", "-m", msg],
                        check=True, capture_output=True)
-        print("[publish_batch] 已 git commit。")
+        print("[publish_batch] 已 git commit（仅文章）。")
     except Exception as e:
         print(f"[publish_batch] git 提交跳过/失败: {e}")
 

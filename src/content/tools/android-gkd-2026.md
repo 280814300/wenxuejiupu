@@ -55,5 +55,5 @@ GKD（全称基于 Accessibility + 高级选择器 + 订阅规则的自定义屏
 
 <div class="card" style="border:2px solid #0ea5e9;background:#f0f9ff;text-align:center;padding:1.15rem;margin:1.25rem 0;">
 <strong style="font-size:1.05rem;">点击下载指引 →</strong><br/>
-<a href="https://github.com/gkd-kit/gkd/releases" style="display:inline-block;margin-top:.6rem;padding:.55rem 1.3rem;background:#0ea5e9;color:#fff;border-radius:8px;text-decoration:none;font-weight:600;">立即获取 GKD 下载与配置</a>
+<a href="https://pan.quark.cn/s/e209de6068c9" style="display:inline-block;margin-top:.6rem;padding:.55rem 1.3rem;background:#0ea5e9;color:#fff;border-radius:8px;text-decoration:none;font-weight:600;">本文已存夸克网盘 · 点此下载 / 转存</a>
 </div>

@@ -54,5 +54,5 @@ draft: false
 
 <div class="card" style="border:2px solid #0ea5e9;background:#f0f9ff;text-align:center;padding:1.15rem;margin:1.25rem 0;">
 <strong style="font-size:1.05rem;">点击下载指引 →</strong><br/>
-<a href="https://github.com/didjdk/adbhelper/releases" style="display:inline-block;margin-top:.6rem;padding:.55rem 1.3rem;background:#0ea5e9;color:#fff;border-radius:8px;text-decoration:none;font-weight:600;">立即获取 甲壳虫ADB助手 下载与配置</a>
+<a href="https://pan.quark.cn/s/0bb39ea39fd5" style="display:inline-block;margin-top:.6rem;padding:.55rem 1.3rem;background:#0ea5e9;color:#fff;border-radius:8px;text-decoration:none;font-weight:600;">本文已存夸克网盘 · 点此下载 / 转存</a>
 </div>

@@ -59,5 +59,5 @@ MusicFree 是一款 **插件化、定制化、无广告的免费音乐播放器*
 
 <div class="card" style="border:2px solid #0ea5e9;background:#f0f9ff;text-align:center;padding:1.15rem;margin:1.25rem 0;">
 <strong style="font-size:1.05rem;">点击下载指引 →</strong><br/>
-<a href="https://github.com/maotoumao/MusicFree/releases" style="display:inline-block;margin-top:.6rem;padding:.55rem 1.3rem;background:#0ea5e9;color:#fff;border-radius:8px;text-decoration:none;font-weight:600;">立即获取 MusicFree 下载与配置</a>
+<a href="https://pan.quark.cn/s/31ecc8304ac9" style="display:inline-block;margin-top:.6rem;padding:.55rem 1.3rem;background:#0ea5e9;color:#fff;border-radius:8px;text-decoration:none;font-weight:600;">本文已存夸克网盘 · 点此下载 / 转存</a>
 </div>

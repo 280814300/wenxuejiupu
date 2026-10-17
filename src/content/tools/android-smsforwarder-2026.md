@@ -53,5 +53,5 @@ SmsForwarder 是一款 **Android 应用**，监控手机的短信、来电和 Ap
 
 <div class="card" style="border:2px solid #0ea5e9;background:#f0f9ff;text-align:center;padding:1.15rem;margin:1.25rem 0;">
 <strong style="font-size:1.05rem;">点击下载指引 →</strong><br/>
-<a href="https://github.com/pppscn/SmsForwarder/releases" style="display:inline-block;margin-top:.6rem;padding:.55rem 1.3rem;background:#0ea5e9;color:#fff;border-radius:8px;text-decoration:none;font-weight:600;">立即获取 短信转发器 下载与配置</a>
+<a href="https://pan.quark.cn/s/4a10288f9974" style="display:inline-block;margin-top:.6rem;padding:.55rem 1.3rem;background:#0ea5e9;color:#fff;border-radius:8px;text-decoration:none;font-weight:600;">本文已存夸克网盘 · 点此下载 / 转存</a>
 </div>
