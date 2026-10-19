@@ -76,7 +76,8 @@ def slugify(title):
     else:
         py = lazy_pinyin(title, style=0)  # 无声调
         base = "-".join([w for w in py if w])
-    base = re.sub(r"[^a-z0-9\-]+", "-", base.lower()).strip("-")
+    base = re.sub(r"[^a-z0-9\-]+", "-", base.lower())
+    base = re.sub(r"-+", "-", base).strip("-")
     return base
 
 
@@ -109,6 +110,8 @@ def published_titles():
 
 def build_md(item, pubdate, slug):
     title, raw_author = clean_title_author(item["title"], item.get("author", ""))
+    # 分集标记 (1)/(2) 转为全角括号，标题更整洁
+    title = re.sub(r"\((\d+)\)", r"（\1）", title)
     region_label, name = clean_author_region(raw_author)
     if region_label and "出版机构" not in region_label:
         author_disp = f"{name}（{region_label}）"
