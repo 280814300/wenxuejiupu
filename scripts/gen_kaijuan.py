@@ -43,31 +43,42 @@ TITLE_OVERRIDE = {  # 特殊书名校正（与历史约定一致）
 }
 
 
+# 书名尾缀里被误当成作者的垃圾词（实为刊物类别，应丢弃而非当作者）
+JUNK_TAIL = {"杂志"}
+
+
 def clean_title_author(title, author):
     t = title.replace("[", "").replace("]", "")
-    # 作者保留 ] 以便 clean_author_region 解析 “地区]姓名” 分隔符
+    # 作者字段保留 ] 供 clean_author_region 解析 “地区]姓名”
     a = (author or "").replace("[", "")
-    # 书名里可能嵌了作者，如 "中国方术考.李零"
+    # 书名里可能嵌了作者，如 "中国方术考.李零"；尾缀若是垃圾词则只丢弃不设为作者
     if (not a) and "." in t:
         parts = t.split(".")
         cand = parts[-1].strip()
-        if 0 < len(cand) <= 8 and len(parts) > 1:
+        if 0 < len(cand) <= 12 and len(parts) > 1:
+            if cand not in JUNK_TAIL:
+                a = cand
             t = ".".join(parts[:-1]).strip()
-            a = cand
     return t.strip(), a.strip()
 
 
 def clean_author_region(a):
-    """返回 (region_label, name)。region_label 可能为空。"""
+    """返回 (region_label, name)。支持多作者 chain：地区]姓名&[地区]姓名。"""
     if not a:
         return "", ""
-    m = re.match(r"^([\u4e00-\u9fff]+(?:\.[\u4e00-\u9fff]+)?)\](.*)$", a)
-    if m:
-        region = m.group(1)
-        name = m.group(2).strip()
-        label = REGION.get(region, region)
-        return label, name
-    return "", a.strip()
+    names, regions = [], []
+    for p in re.split(r"\s*&\s*", a):
+        p = p.strip().replace("[", "")
+        if "]" in p:
+            region, name = p.split("]", 1)
+            label = REGION.get(region, region)
+            if label and label not in regions:
+                regions.append(label)
+            if name.strip():
+                names.append(name.strip())
+        elif p:
+            names.append(p)
+    return "、".join(regions), "、".join(names)
 
 
 def slugify(title):
@@ -90,6 +101,11 @@ def unique_slug(base):
     return slug
 
 
+def norm_paren(t):
+    """全角括号统一为半角，去重比较时忽略括号形式差异。"""
+    return t.replace("（", "(").replace("）", ")")
+
+
 def published_titles():
     """从已有 kaijuan 文章 frontmatter 提取已发布书名（去重依据，与 slug 拼写无关）。"""
     s = set()
@@ -104,7 +120,7 @@ def published_titles():
             continue
         m = re.search(r"title:\s*开卷八分钟｜《([^》]+)》", txt)
         if m:
-            s.add(m.group(1).strip())
+            s.add(norm_paren(m.group(1).strip()))
     return s
 
 
@@ -215,12 +231,12 @@ def main():
 
     data = json.load(open(PENDING))
     have = [x for x in data if x.get("has_link") and x.get("url")]
-    done = published_titles()  # 已发布书名集合
-    # 已发布检测：按书名去重（与 slug 拼写无关）
+    done = published_titles()  # 已发布书名集合（括号已归一化）
+    # 已发布检测：按书名去重（与 slug 拼写无关；括号形式差异已归一化）
     todo = []
     for x in have:
         t, _ = clean_title_author(x["title"], x.get("author", ""))
-        if t in done:
+        if norm_paren(t) in done:
             continue  # 已发布，跳过
         base = slugify(t)
         slug = unique_slug(base)
