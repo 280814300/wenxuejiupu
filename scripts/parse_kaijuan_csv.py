@@ -7,10 +7,13 @@
 import csv, re, json, sys, os
 
 CSVS = [
-    "/Users/weixing/Downloads/分享结果导出-1792249713062.csv",
-    "/Users/weixing/Downloads/分享结果导出-1792249732396.csv",
-    "/Users/weixing/Downloads/分享结果导出-1792249747106.csv",
-    "/Users/weixing/Downloads/分享结果导出-1792249760339.csv",
+    "/Users/weixing/Downloads/分享结果导出-1795273878509.csv",
+    "/Users/weixing/Downloads/分享结果导出-1795273903137.csv",
+    "/Users/weixing/Downloads/分享结果导出-1795273925933.csv",
+    "/Users/weixing/Downloads/分享结果导出-1795273954366.csv",
+    "/Users/weixing/Downloads/分享结果导出-1795273965884.csv",
+    "/Users/weixing/Downloads/分享结果导出-1795273980654.csv",
+    "/Users/weixing/Downloads/分享结果导出-1795273990081.csv",
 ]
 OUT = os.path.join(os.path.dirname(__file__), "kaijuan_pending.json")
 
@@ -43,6 +46,18 @@ def parse_addr(addr: str):
 
 rows = []
 seen = set()
+# 与已有 pending.json 合并：保留旧条目（含无链接期），按 (date,title) 去重
+if os.path.exists(OUT):
+    try:
+        old = json.load(open(OUT, encoding="utf-8"))
+        for r in old:
+            key = (r["date"], r["title"])
+            if key not in seen:
+                seen.add(key)
+                rows.append(r)
+        print(f"[merge] 已有 pending 条目 {len(old)} 条")
+    except Exception as e:
+        print(f"[warn] 旧 pending 读取失败，全量重建: {e}")
 for path in CSVS:
     if not os.path.exists(path):
         print(f"[warn] 缺失: {path}")
