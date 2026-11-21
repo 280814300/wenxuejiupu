@@ -45,6 +45,8 @@ TITLE_OVERRIDE = {  # 特殊书名校正（与历史约定一致）
 
 # 书名尾缀里被误当成作者的垃圾词（实为刊物类别，应丢弃而非当作者）
 JUNK_TAIL = {"杂志"}
+# 书名尾缀是主持人而非作者（如纪念专题），丢弃不当作者
+AUTHOR_DROP = {"王小波10岁"}  # 实为王小波逝世十周年专题，梁文道是讲述者
 
 
 def clean_title_author(title, author):
@@ -55,10 +57,11 @@ def clean_title_author(title, author):
     if (not a) and "." in t:
         parts = t.split(".")
         cand = parts[-1].strip()
+        base = ".".join(parts[:-1]).strip()
         if 0 < len(cand) <= 12 and len(parts) > 1:
-            if cand not in JUNK_TAIL:
+            if cand not in JUNK_TAIL and base not in AUTHOR_DROP:
                 a = cand
-            t = ".".join(parts[:-1]).strip()
+            t = base
     return t.strip(), a.strip()
 
 
